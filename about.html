@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{GAtag}}
+	{{FacebookPixelCode}}
+    <meta charset="utf-8">
+	<title>{{AboutPageTitle}} - {{SiteTitle}} - {{KeyLine}}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="{{SiteTitle}}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow " />
+	<link rel="canonical" href="{{Site-Url}}" />
+	<Meta name="language" content="English" />
+	<meta name="title" content="{{AboutPageTitle}} - {{SiteTitle}} - {{KeyLine}}">
+	<meta name="description" content="{{AboutPageDescription}}" />
+	<meta name="keywords" content="{{AboutPageKeyword}}" />
+
+    <meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{{AboutPageTitle}} - {{SiteTitle}} - {{KeyLine}}" />
+	<meta property="og:description" content="{{AboutPageDescription}}" />
+	<meta property="og:image" content="{{Logo}}" />
+	<meta property="og:url" content="{{Site-Url}}" />
+	<meta property="og:site_name" content="{{SiteTitle}}" />
+
+    <meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="{{SiteTitle}}" />
+	<meta name="twitter:title" content="{{AboutPageTitle}} - {{SiteTitle}} - {{KeyLine}}" />
+	<meta name="twitter:description" content="{{AboutPageDescription}}" />
+	<meta name="twitter:image" content="{{Logo}}" />
+
+    <link rel="icon" type="image/x-icon" href="{{Favicon}}">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family={{PrimaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://fonts.googleapis.com/css2?family={{PrimaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family={{PrimaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    </noscript>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family={{SecondaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://fonts.googleapis.com/css2?family={{SecondaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family={{SecondaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    </noscript>
+    {{Style}}
+    {{Script}}
+</head>
+
+<style>
+
+    :root {
+        --primary-color: {{PrimaryColor}};
+        --second-color: {{SecondaryColor}};
+        --white: #ffffff; 
+        --dark: #506172; 
+        --bgcolor: {{BgColor}}; 
+        --primary-font:'{{PrimaryFont}}';
+        --second-font: '{{SecondaryFont}}' ;
+    }
+    
+    *,body,ol,ul{padding:0;margin:0}a,ol,ul{list-style:none}*,body,hr,ol,ul{margin:0}.btn:after,.text-link:after{position:absolute;background-color:var(--primary-color);content:'';transition:.5s}#button:hover,.banner-area,.btn:after,.team-control .next:hover,.team-control .prev:hover,.testi-control .next:hover,.testi-control .prev:hover,.text-link:after{background-color:var(--primary-color)}.title,button.share-btn{color:var(--primary-color)}.slick-slider,body{box-sizing:border-box}.btn,.slick-list,.slick-slider,.slick-track,.text-link{position:relative}.btn:after,.slick-track{top:0;display:block;left:0}.btn,.btn:after,.slick-list,.slick-slider,.slick-track,.text-link{display:block}#button,.slick-loading .slick-slide,.slick-loading .slick-track{visibility:hidden}.slick-list,.team_inner{overflow:hidden}.footer-logo img,.navbar-brand img{max-height:90px;max-width:300px}#NewsLetterFormResponse,.banner-content .title,.designation,.our_team .title,.team-member-desc,.testi-item .title,.testi-item p,.testimonial_section .title,.translate{text-align:center}html{scroll-behavior:smooth}h1,h2,h3,h4,h5,h6{font-size:42px;font-family:var(--primary-font);line-height:1.5;width:100%;margin-bottom:0}ol,p,ul{font-family:var(--second-font)}p{text-align:justify;font-size:16px;line-height:30px;margin-bottom:0;color:var(--dark)}.btn,.text-link,.title,a{font-family:var(--primary-font)}a{text-decoration:none!important}img{width:100%;height:auto}.spad{padding:90px 0}.title{font-size:36px;font-weight:500;margin-bottom:10px}.btn,.btn:hover{color:var(--white)}.container{max-width:1170px;margin:0 auto;padding:0 15px}#button{display:inline-block;background-color:var(--second-color);width:40px;height:40px;border-radius:50%;position:fixed;bottom:30px;right:30px;transition:background-color .3s,opacity .5s,visibility .5s;opacity:0;z-index:1000}#button.show{opacity:1;visibility:visible}#button svg{cursor:pointer;transform:rotate(90deg);fill:var(--white);width:35px;height:35px;padding:0 1px 3.5px}.btn{width:fit-content;cursor:pointer;border:0;z-index:1;border-radius:0;background-color:var(--second-color);font-size:18px;letter-spacing:1px;margin-top:15px;padding:10px 45px}.btn:hover:after,.text-link{width:100%}.btn:after{width:3%;height:100%;z-index:-1}.text-link{transition:.5s;color:var(--second-color);font-weight:500;font-size:17px;padding:5px 0}.designation,.team-member-desc{font-family:var(--second-font)}.text-link:hover{color:var(--primary-font);padding-left:25px}.text-link:after{width:0;height:3px;border-radius:10px;display:block;top:15px;left:0}.footer-links .navbar-nav .nav-item .nav-link:hover:after,.text-link:hover:after{width:20px}button.share-btn{cursor:pointer;background:0 0;border:none;outline:0;padding:0 10px}button.share-btn svg{fill:var(--primary-color);width:15px}.slick-slider{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list{margin:0;padding:0}.slick-list:focus{outline:0}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slick-track{margin-left:auto;margin-right:auto}.slick-track:after,.slick-track:before{display:table;content:''}.slick-track:after{clear:both}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir=rtl] .slick-slide{float:right}.dropdown-menu.show,.slick-initialized .slick-slide,.slick-slide img{display:block}.copy-right img,.slick-arrow.slick-hidden,.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-next,.slick-prev{font-size:0;line-height:0;position:absolute;top:50%;display:block;width:20px;height:20px;padding:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);cursor:pointer;color:transparent;border:none;outline:0;background:0 0}.copy-right .copy-right-item a,.designation,.navbar-nav .nav-item .nav-link:hover,.top-contact a:hover{color:var(--second-color)}.slick-next:focus,.slick-next:hover,.slick-prev:focus,.slick-prev:hover{color:transparent;outline:0;background:0 0}.slick-next:focus:before,.slick-next:hover:before,.slick-prev:focus:before,.slick-prev:hover:before{opacity:1}.slick-next.slick-disabled:before,.slick-prev.slick-disabled:before{opacity:.25}.slick-next:before,.slick-prev:before{font-family:slick;font-size:20px;line-height:1;opacity:.75;color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.dropdown-menu .dropdown-item,.navbar-nav .nav-item .nav-link{color:var(--primary-color);font-weight:500;letter-spacing:1px}.slick-prev{left:-25px}[dir=rtl] .slick-prev{right:-25px;left:auto}.slick-prev:before,[dir=rtl] .slick-next:before{content:'â†'}.slick-next:before,[dir=rtl] .slick-prev:before{content:'â†’'}.slick-next{right:-25px}[dir=rtl] .slick-next{right:auto;left:-25px}.top-header{background-color:var(--primary-color);padding:10px 0}.top-header-inside{display:flex;justify-content:space-between}.top-contact,.top-header-items{display:flex;gap:0 15px;align-items:center}.top-contact .icon,.top-header .social-media ul li a{width:30px;border-radius:50%;background-color:var(--white);height:30px;display:block;transition:.5s}.top-contact .icon svg{padding:5px;fill:var(--primary-color);margin-top:1px}.top-contact a{transition:.5s;font-size:16px;color:var(--white);letter-spacing:1px}.newsletter .form-row,.top-header .social-media ul{display:flex;gap:15px}.top-header .social-media ul li a:hover{transform:rotate(360deg);background-color:var(--second-color)}.top-header .social-media ul li a svg{fill:var(--primary-color);padding:5px}.top-header .social-media ul li a:hover svg{fill:var(--white)}.nav-inside,.nav-items{height:100px;max-height:100px;min-height:50px;display:flex;justify-content:space-between;position:relative;align-items:center}.navbar-brand{line-height:4px}.navbar-toggler{display:none;width:30px;height:30px;background-color:transparent;border:none;outline:0}.navbar-collapse .navbar-nav{display:flex;gap:15px;position:relative}.navbar-nav .nav-item .nav-link{font-size:18px;transition:.5s;padding:0 .5rem}.nav-item.dropdown{position:relative;margin-right:20px}.dropdown:after{content:'';background-repeat:no-repeat;background-size:contain;width:12px;height:12px;display:block;position:absolute;top:40%;right:-10px}.dropdown-menu{display:none;position:absolute;top:34px;border-radius:0;padding:15px;border:0;border-top:5px solid var(--second-color);z-index:999;background-color:#fff;max-width:300px;min-width:230px}.dropdown-menu .dropdown-item{width:100%;display:block;padding:6px 15px}.fixed-header{position:fixed;top:0;width:100%;background-color:var(--white);z-index:9999;box-shadow:0 2px 19px #3a3838a6;transition:.5s}.fixed-header .nav-inside,.nav-items{max-height:80px}.fixed-header .navbar-brand img{max-width:250px;max-height:70px}.banner-content .title{color:var(--white);line-height:1.5;padding:75px 0}.about-us-inside{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}.about-us-img,.about-vm-image img{margin-top:15px}.about-us-content,.about-us-img,.vision-mission-items div{flex:1 1}.vision-mission{background-color:var(--bgcolor)}.vision-mission-items{display:flex;flex-wrap:wrap;gap:25px;margin-bottom:25px}.our_team .title{margin-bottom:20px}.team-member-desc .title{font-weight:500;font-size:18px}.team-member .team-member-image img{object-fit:cover;aspect-ratio:1.1;max-width:270px;max-height:270px}.team-member-desc{box-shadow:0 5px 19px #f7f7f7;padding:8px 15px;width:75%;background-color:var(--white);margin:-15px auto 0;z-index:1;position:relative}.slick-slide{margin:0 20px}.team-control,.testi-control{gap:5px;margin-top:25px;display:flex}.team-control{justify-content:center}.team-control .next,.team-control .prev,.testi-control .next,.testi-control .prev{cursor:pointer;outline:0;transition:.5s;background-color:var(--second-color);border:none;width:40px;height:40px;color:var(--white);border-radius:50%}.newsletter button.subcribe,.testi-item .title{color:var(--primary-color);font-family:var(--primary-font)}.team-control button svg,.testi-control button svg{fill:var(--white);width:30px;height:30px;padding:4px 3px 0 0}.team-control .next svg,.testi-control .next svg{transform:rotate(180deg);padding:0 4px 3px 0}.testi-item img{width:80px;margin:15px auto}.testimonial_section .slick-track .carousel-item{height:auto}.testimonial_section .main-control button{margin-top:20px;border-radius:50%}.testi-item .decs{margin-bottom:10px}.testi-item .title{font-weight:500;font-size:22px}.designation{font-weight:500;letter-spacing:1px}.testi-control{position:relative;justify-content:center}.newsletter{background-color:var(--primary-color);padding:50px 0}.newsletter-inside{display:flex;flex-wrap:wrap;align-items:center}.newsletter .title{color:var(--white);width:40%;margin:0;font-size:30px;letter-spacing:1px}.newsletter form{width:60%}.newsletter .form-row .form-control{font-size:19px;border:1px solid #fff;font-family:var(--second-font);background-color:transparent;padding:15px;outline:0;color:var(--white);width:61%;border-radius:0}.newsletter .form-row .form-control::placeholder{color:#999}.newsletter button.subcribe{font-size:18px;letter-spacing:1px;cursor:pointer;transition:.5s;background-color:var(--white);margin-left:8px;border:none;outline:0;width:200px;height:56px}.newsletter button.subcribe:hover{background-color:var(--second-color);color:var(--white)}#NewsLetterFormResponse{margin-top:15px;color:var(--white);font-size:20px;font-family:var(--primary-font);letter-spacing:1px}#NewsLetterFormResponse .alert-success{color:#267e3e}#NewsLetterFormResponse .alert-danger{color:#e60303}.main-footer{padding:70px 0;background-color:#f2f2f2}.footer-inside{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-items{width:30%}.contact-icon,.footer-social ul li a{width:30px;transition:.5s;background-color:var(--second-color);border-radius:50%;height:30px}.footer-logo img{width:auto}.footer-items .decs{margin:1rem 0;color:#000}.footer-social ul{justify-content:start;display:flex;gap:10px;margin-top:15px}.footer-social ul li a{display:block}.footer-social ul li a svg{width:20px;height:20px;fill:var(--white);padding:5px}.footer-items .title{font-size:28px}.footer-links .navbar-nav .nav-item{position:relative;padding:8px 0}.footer-links .navbar-nav .nav-item .nav-link{color:#000}.footer-links .navbar-nav .nav-item .nav-link:after{width:0;height:3px;border-radius:10px;display:block;top:50%;position:absolute;background-color:var(--primary-color);transition:.5s;left:0;content:''}.footer-links .navbar-nav .nav-item .nav-link:hover{padding-left:25px;color:var(--second-color)}.contact-info .contact-items{display:flex;margin:15px 0;width:100%;gap:0 15px}.contact-icon{flex-shrink:0;display:block}.contact-icon svg{padding:5px;fill:var(--white)}.contact-info .contact-items a{display:block;margin-top:3px;color:#000;font-weight:500;letter-spacing:1px}.contact-info .contact-items span{font-weight:500;color:#000;line-height:1.7;font-family:var(--primary-font)}.copy-right{position:relative;padding:10px 15px;background-color:var(--primary-color)}.copy-right .copy-right-item{display:block;text-align:center;line-height:1.5;color:var(--white);font-family:var(--primary-font);font-weight:400;letter-spacing:1px;font-size:15px}.translate{margin:10px 0}.goog-te-gadget-simple{padding:10px!important}.goog-te-gadget-simple span{margin:5px}@media only screen and (max-width:1024px){.newsletter .title,.newsletter form{width:100%;text-align:center}.newsletter .form-row{justify-content:center;margin-top:20px}}@media only screen and (max-width:991px){.main-header,.nav-inside,.navbar-toggler{display:block}.nav-inside,.nav-items{max-height:80px}.navbar-brand img{max-width:250px;max-height:70px}.navbar-collapse .navbar-nav{flex-direction:column;opacity:0;height:0;transition:.5s;visibility:hidden}.navbar-collapse.show .navbar-nav{height:100%;visibility:visible;opacity:1;background-color:var(--bgcolor);z-index:1;padding:15px}.navbar-collapse.show .navbar-nav .dropdown-menu{position:relative;top:10px;left:10px;max-width:100%}.dropdown:after{top:10px}.footer-items:first-child{width:100%}}@media only screen and (max-width:768px){.title{font-size:28px}.about-us-content,.about-us-img,.vision-mission-items div{flex:auto}.newsletter .form-row{flex-wrap:wrap}.newsletter .form-row .form-control{width:100%}}@media only screen and (max-width:767px){.top-header{display:none}.footer-items{width:100%}}@media only screen and (max-width:575px){h1{font-size:36px}p{font-size:14px;line-height:28px}.spad{padding:40px 0}.main-footer{padding:20px 0}}
+
+</style>
+
+
+<body itemscope="" itemtype="http://schema.org/LocalBusiness">
+
+    <!-- Back to Top -->
+        <a id="button">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 128 128" viewBox="0 0 128 128">
+                <path id="Left_Arrow_4_"
+                    d="m84 108c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-37.172 37.172 37.172 37.172c1.563 1.563 1.563 4.094 0 5.656-.781.781-1.805 1.172-2.828 1.172z">
+                </path>
+            </svg>
+        </a>
+    <!-- Back to Top End -->
+
+    <!--Header sections-->
+		{{Header}}
+    <!--Header sections-end-->
+
+    <!-- Site Banner Section Here-->
+        <div class="banner-area">
+            <div class="container">
+                <div class="banner-content">
+                    <div class="title">{{AboutPageTitle}}</div>
+                </div>
+            </div>
+        </div>
+    <!-- Site Banner Section End-->
+
+    <!-- Home About Section Here-->
+        <div class="about-us spad">
+            <div class="container">
+                <div class="about-us-inside">
+                    <div class="about-us-img">
+                        <img src="{{AboutImage1}}" srcset="{{AboutImage1SrcSet}}" width="100%" height="100%" alt="{{AboutTitle1}}" itemprop="image">
+                    </div>
+                    <div class="about-us-content">
+                        <div class="title">
+                            <h1>{{AboutTitle1}}</h1>
+                        </div>
+                        <div class="decs">
+                            <p>{{AboutDescription1}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Home About Section End-->
+
+    <!-- Vision Mission Section Here-->
+        <div class="vision-mission spad">
+            <div class="container">
+                <div class="vision-mission-inner">
+                    <div class="vision-mission-items">
+                        <div class="about-vm-image">
+                            <img src="{{AboutImage2}}" loading="lazy" srcset="{{AboutImage2SrcSet}}" alt="{{AboutTitle2}}" width="100%" height="100%">
+                        </div>
+                        <div class="about-vm-content">
+                            <h2 class="title">{{AboutTitle2}}</h2>
+                            <p>{{AboutDescription2}}</p>
+                        </div>
+                    </div>
+                    <div class="vision-mission-items">
+                        <div class="about-vm-content">
+                            <h2 class="title">{{AboutTitle3}}</h2>
+                            <p>{{AboutDescription3}}</p>
+                        </div>
+                        <div class="about-vm-image">
+                            <img src="{{AboutImage3}}" loading="lazy" srcset="{{AboutImage3SrcSet}}" alt="{{AboutTitle3}}" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Vision Mission Section End-->
+
+    <!--Our Team Section-->
+        <div class="our_team spad">
+            <div class="container">
+                <h3 class="title">{{TeamTitle}}</h3>
+                <div class="team_inner">
+                    <div class="team-member" itemprop="founder" itemscope itemtype="http://schema.org/Person">
+                        <div class="team-member-image">
+                            <img src="{{MemberImage}}" loading="lazy" srcset="{{MemberImageSrcSet}}" width="100%" height="100%" alt="{{MemberName}}" itemprop="image">
+                        </div>
+                        <div class="team-member-desc">
+                            <div class="title" itemprop="name">{{MemberName}}</div>
+                            <span itemprop="jobTitle">{{Designation}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-control"></div>
+            </div>
+        </div>
+    <!--Our Team Section-end-->
+
+    <hr>
+
+    <!--Testimonial Section-->
+        <div class="testimonial_section spad">
+            <div class="container">
+                <h3 class="title">{{TestimonialTitle}}</h3>
+                    <div class="testi-item">
+                        <div class="carousel-item active" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                            <img src="{{TestimonialImage}}" loading="lazy" srcset="{{TestimonialImageSrcSet}}" width="100%" height="100%" alt="{{TestimonialName}}"
+                                itemprop="name">
+                            <p class="my-3" itemprop="reviewBody">
+                                {{ReviewText}}</p>
+                            <div class="title" itemprop="author">{{TestimonialName}}</div>
+                            <div class="designation" itemprop="designation">{{TestimonialSubTitle}}</div>
+                        </div>
+                    </div>
+                <div class="testi-control"></div>
+            </div>
+        </div>
+    <!--Testimonial-End-Section-->
+
+    <!-- News Letter Here -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="newsletter-inside">
+                    <div class="title">Subscribe Our Newsletter</div>
+                    <form method="post" id="newsletter-form">
+                        <div class="form-row">
+                            <input type="text" name="Email" id="newsletter-email-input"  placeholder="Enter Your Email Here" class="form-control" required="*">
+                            <button type="submit" class="subcribe" name="submit">Subscribe Now</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="NewsLetterFormResponse"></div>
+            </div>
+        </div>
+    <!-- News Letter End -->
+
+    <!--Footer sections-->
+	    {{Footer}}
+	<!--Footer sections-end-->
+
+    
+
+</body>
+</html>

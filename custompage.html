@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{GAtag}}
+	{{FacebookPixelCode}}
+    <meta charset="utf-8">
+	<title>{{CustomPageTitle}} - {{SiteTitle}} - {{KeyLine}}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="{{SiteTitle}}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow " />
+	<link rel="canonical" href="{{Site-Url}}" />
+	<Meta name="language" content="English" />
+	<meta name="title" content="{{CustomPageTitle}} - {{SiteTitle}} - {{KeyLine}}">
+	<meta name="description" content="{{CustomPageDescription}}" />
+	<meta name="keywords" content="{{CustomPageKeyword}}" />
+
+    <meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{{CustomPageTitle}} - {{SiteTitle}} - {{KeyLine}}" />
+	<meta property="og:description" content="{{CustomPageDescription}}" />
+	<meta property="og:image" content="{{Logo}}" />
+	<meta property="og:url" content="{{Site-Url}}" />
+	<meta property="og:site_name" content="{{SiteTitle}}" />
+
+    <meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="{{SiteTitle}}" />
+	<meta name="twitter:title" content="{{CustomPageTitle}} - {{SiteTitle}} - {{KeyLine}}" />
+	<meta name="twitter:description" content="{{CustomPageDescription}}" />
+	<meta name="twitter:image" content="{{Logo}}" />
+
+    <link rel="icon" type="image/x-icon" href="{{Favicon}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family={{PrimaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://fonts.googleapis.com/css2?family={{PrimaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family={{PrimaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    </noscript>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family={{SecondaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://fonts.googleapis.com/css2?family={{SecondaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family={{SecondaryFont}}:wght@300;400;500;600;700;800;900&display=swap">
+    </noscript>
+    {{Style}}
+	{{Script}}
+</head>
+
+<style>
+
+    :root {
+        --primary-color: {{PrimaryColor}};
+        --second-color: {{SecondaryColor}};
+        --white: #ffffff; 
+        --dark: #506172; 
+        --bgcolor: {{BgColor}}; 
+        --primary-font:'{{PrimaryFont}}';
+        --second-font: '{{SecondaryFont}}' ;
+    }
+    
+    *,body,ol,ul{padding:0;margin:0}a,ol,ul{list-style:none}*,body,hr,ol,ul{margin:0}.btn,.text-link{position:relative}.btn:after,.text-link:after{position:absolute;display:block;transition:.5s;left:0;content:''}.title,button.share-btn{color:var(--primary-color)}.footer-logo img,.navbar-brand img{max-height:90px;max-width:300px}#button svg,.contact-icon svg,.top-header .social-media ul li a:hover svg{fill:var(--white)}html{scroll-behavior:smooth}body{box-sizing:border-box}h1,h2,h3,h4,h5,h6{font-size:42px;font-family:var(--primary-font);line-height:1.5;width:100%;margin-bottom:0}ol,p,ul{font-family:var(--second-font)}p{text-align:justify;font-size:16px;line-height:30px;margin-bottom:0;color:var(--dark)}#NewsLetterFormResponse,.btn,.copy-right .copy-right-item,.newsletter button.subcribe,.text-link,.title,a{font-family:var(--primary-font)}a{text-decoration:none!important}img{width:100%;height:auto}.spad{padding:90px 0}.title{font-size:36px;font-weight:500;margin-bottom:10px}.btn,.btn:hover{color:var(--white)}.container{max-width:1170px;margin:0 auto;padding:0 15px}#button{display:inline-block;background-color:var(--second-color);width:40px;height:40px;border-radius:50%;position:fixed;bottom:30px;right:30px;transition:background-color .3s,opacity .5s,visibility .5s;opacity:0;visibility:hidden;z-index:1000}#button.show{opacity:1;visibility:visible}#button svg{cursor:pointer;transform:rotate(90deg);width:35px;height:35px;padding:0 1px 3.5px}#button:hover,.banner-area{background-color:var(--primary-color)}.btn{width:fit-content;display:block;cursor:pointer;border:0;z-index:1;border-radius:0;background-color:var(--second-color);font-size:18px;letter-spacing:1px;margin-top:15px;padding:10px 45px}.btn:hover:after,.text-link{width:100%}.btn:after,.text-link:after,.top-header{background-color:var(--primary-color)}.copy-right .copy-right-item a,.navbar-nav .nav-item .nav-link:hover,.text-link,.top-contact a:hover{color:var(--second-color)}.btn:after{width:3%;height:100%;z-index:-1;top:0}.text-link{transition:.5s;font-weight:500;font-size:17px;padding:5px 0;display:block}.text-link:hover{color:var(--primary-font);padding-left:25px}.text-link:after{width:0;height:3px;border-radius:10px;top:15px}.footer-links .navbar-nav .nav-item .nav-link:hover:after,.text-link:hover:after{width:20px}button.share-btn{cursor:pointer;background:0 0;border:none;outline:0;padding:0 10px}button.share-btn svg{fill:var(--primary-color);width:15px}.top-header{padding:10px 0}.top-header-inside{display:flex;justify-content:space-between}.top-contact,.top-header-items{display:flex;gap:0 15px;align-items:center}.top-contact .icon,.top-header .social-media ul li a{width:30px;border-radius:50%;background-color:var(--white);height:30px;display:block;transition:.5s}.top-contact .icon svg{padding:5px;fill:var(--primary-color);margin-top:1px}.top-contact a{transition:.5s;font-size:16px;color:var(--white);letter-spacing:1px}.dropdown-menu .dropdown-item,.navbar-nav .nav-item .nav-link,.newsletter button.subcribe{color:var(--primary-color);letter-spacing:1px}.newsletter .form-row,.top-header .social-media ul{display:flex;gap:15px}.top-header .social-media ul li a:hover{transform:rotate(360deg);background-color:var(--second-color)}.top-header .social-media ul li a svg{fill:var(--primary-color);padding:5px}.nav-inside,.nav-items{height:100px;max-height:100px;min-height:50px;display:flex;justify-content:space-between;position:relative;align-items:center}.navbar-brand{line-height:4px}.navbar-toggler{display:none;width:30px;height:30px;background-color:transparent;border:none;outline:0}.navbar-collapse .navbar-nav{display:flex;gap:15px;position:relative}.navbar-nav .nav-item .nav-link{font-size:18px;transition:.5s;padding:0 .5rem;font-weight:500}.nav-item.dropdown{position:relative;margin-right:20px}.dropdown:after{content:'';background-repeat:no-repeat;background-size:contain;width:12px;height:12px;display:block;position:absolute;top:40%;right:-10px}.dropdown-menu{display:none;position:absolute;top:34px;border-radius:0;padding:15px;border:0;border-top:5px solid var(--second-color);z-index:999;background-color:#fff;max-width:300px;min-width:230px}.fixed-header,.newsletter button.subcribe{transition:.5s;background-color:var(--white)}.dropdown-menu .dropdown-item{width:100%;display:block;font-weight:500;padding:6px 15px}.dropdown-menu.show{display:block}.fixed-header{position:fixed;top:0;width:100%;z-index:9999;box-shadow:0 2px 19px #3a3838a6}.fixed-header .nav-inside,.nav-items{max-height:80px}.fixed-header .navbar-brand img{max-width:250px;max-height:70px}.banner-content .title{color:var(--white);text-align:center;line-height:1.5;padding:75px 0}.newsletter{background-color:var(--primary-color);padding:50px 0}.newsletter-inside{display:flex;flex-wrap:wrap;align-items:center}.newsletter .title{color:var(--white);width:40%;margin:0;font-size:30px;letter-spacing:1px}.newsletter form{width:60%}.newsletter .form-row .form-control{font-size:19px;border:1px solid #fff;font-family:var(--second-font);background-color:transparent;padding:15px;outline:0;color:var(--white);width:61%;border-radius:0}.newsletter .form-row .form-control::placeholder{color:#999}.newsletter button.subcribe{font-size:18px;cursor:pointer;margin-left:8px;border:none;outline:0;width:200px;height:56px}.newsletter button.subcribe:hover{background-color:var(--second-color);color:var(--white)}#NewsLetterFormResponse{text-align:center;margin-top:15px;color:var(--white);font-size:20px;letter-spacing:1px}#NewsLetterFormResponse .alert-success{color:#267e3e}#NewsLetterFormResponse .alert-danger{color:#e60303}.main-footer{padding:70px 0;background-color:#f2f2f2}.footer-inside{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-items{width:30%}.contact-icon,.footer-social ul li a{width:30px;transition:.5s;background-color:var(--second-color);border-radius:50%;height:30px}.footer-logo img{width:auto}.footer-items .decs{margin:1rem 0;color:#000}.footer-social ul{justify-content:start;display:flex;gap:10px;margin-top:15px}.footer-social ul li a{display:block}.footer-social ul li a svg{width:20px;height:20px;fill:var(--white);padding:5px}.footer-items .title{font-size:28px}.footer-links .navbar-nav .nav-item{position:relative;padding:8px 0}.footer-links .navbar-nav .nav-item .nav-link{color:#000}.footer-links .navbar-nav .nav-item .nav-link:after{width:0;height:3px;border-radius:10px;display:block;top:50%;position:absolute;background-color:var(--primary-color);transition:.5s;left:0;content:''}.footer-links .navbar-nav .nav-item .nav-link:hover{padding-left:25px;color:var(--second-color)}.contact-info .contact-items{display:flex;margin:15px 0;width:100%;gap:0 15px}.contact-icon{flex-shrink:0;display:block}.contact-icon svg{padding:5px}.contact-info .contact-items a{display:block;margin-top:3px;color:#000;font-weight:500;letter-spacing:1px}.contact-info .contact-items span{font-weight:500;color:#000;line-height:1.7;font-family:var(--primary-font)}.copy-right{position:relative;padding:10px 15px;background-color:var(--primary-color)}.copy-right .copy-right-item{display:block;text-align:center;line-height:1.5;color:var(--white);font-weight:400;letter-spacing:1px;font-size:15px}.copy-right img{display:none}.translate{text-align:center;margin:10px 0}.goog-te-gadget-simple{padding:10px!important}.goog-te-gadget-simple span{margin:5px}@media only screen and (max-width:1024px){.newsletter .title,.newsletter form{width:100%;text-align:center}.newsletter .form-row{justify-content:center;margin-top:20px}}@media only screen and (max-width:991px){.main-header,.nav-inside,.navbar-toggler{display:block}.nav-inside,.nav-items{max-height:80px}.navbar-brand img{max-width:250px;max-height:70px}.navbar-collapse .navbar-nav{flex-direction:column;opacity:0;height:0;transition:.5s;visibility:hidden}.navbar-collapse.show .navbar-nav{height:100%;visibility:visible;opacity:1;background-color:var(--bgcolor);z-index:1;padding:15px}.navbar-collapse.show .navbar-nav .dropdown-menu{position:relative;top:10px;left:10px;max-width:100%}.dropdown:after{top:10px}.footer-items:first-child{width:100%}}@media only screen and (max-width:768px){.title{font-size:28px}.about-us-img,.newsletter .form-row .form-control{width:100%}.newsletter .form-row{flex-wrap:wrap}}@media only screen and (max-width:767px){.top-header{display:none}.footer-items{width:100%}}@media only screen and (max-width:575px){h1{font-size:36px}p{font-size:14px;line-height:28px}.spad{padding:40px 0}.main-footer{padding:30px}}
+    
+  </style>
+
+
+<body itemscope="" itemtype="http://schema.org/LocalBusiness">
+
+    <!-- Back to Top -->
+        <a id="button">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 128 128" viewBox="0 0 128 128">
+                <path id="Left_Arrow_4_"
+                    d="m84 108c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-37.172 37.172 37.172 37.172c1.563 1.563 1.563 4.094 0 5.656-.781.781-1.805 1.172-2.828 1.172z">
+                </path>
+            </svg>
+        </a>
+    <!-- Back to Top End -->
+
+    <!--Header sections-->
+	    {{Header}}
+	<!--Header sections-end-->
+
+    <!-- Site Banner Section Here-->
+        <div class="banner-area">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1 class="title">{{CustomPageTitle}}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Site Banner Section End-->
+
+    <div class="spad">
+        <div class="container">
+            <div>{{CutomPage}}</div>
+        </div>
+    </div>
+
+    <!-- News Letter Here -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="newsletter-inside">
+                    <div class="title">Subscribe Our Newsletter</div>
+                    <form method="post" id="newsletter-form">
+                        <div class="form-row">
+                            <input type="text" name="Email" id="newsletter-email-input"  placeholder="Enter Your Email Here" class="form-control" required="*">
+                            <button type="submit" class="subcribe" name="submit">Subscribe Now</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="NewsLetterFormResponse"></div>
+            </div>
+        </div>
+    <!-- News Letter End -->
+
+    <!--Footer sections-->
+	    {{Footer}}
+	<!--Footer sections-end-->
+
+    
+</body>
+</html>
