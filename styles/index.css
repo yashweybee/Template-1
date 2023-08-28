@@ -18,6 +18,28 @@
      text-decoration: none;
  }
 
+ /* ------------------------------Progress-bar--------------------------- */
+ .progress-head {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 1;
+ }
+
+ .progress-container {
+     background-color: var(--white);
+     height: 10px;
+     width: 100%;
+ }
+
+ .progress-bar {
+     background-color: var(--primary-color);
+     height: 10px;
+     width: 0%;
+ }
+
+ /* ------------------------------//Progress-bar//--------------------------- */
+
 
  /* -----------------slider ---------------------------------- */
 
@@ -308,6 +330,7 @@
 
  /* -------------------------News Letter----------------------------------*/
  .newsletter {
+     margin: 4em 0;
      padding: 2em;
      background-color: var(--primary-color);
      text-align: center;
@@ -353,7 +376,7 @@
  }
 
  .newsletter .form-row .form-control::placeholder {
-     color: #999
+     color: var(--white)
  }
 
  .newsletter button.subcribe {
@@ -383,12 +406,101 @@
      font-size: 20px
  }
 
- #NewsLetterFormResponse .alert-success {
-     color: #267e3e
- }
-
- #NewsLetterFormResponse .alert-danger {
-     color: #e60303
- }
-
  /* -------------------------//News Letter//-----------------------------*/
+
+ /* --------------------------updates------------------------------------ */
+
+ .updates {
+     margin: 7em 0;
+ }
+
+ .updates .container {
+     text-align: center;
+ }
+
+ .updates .updates-main .updates-items {
+     margin-left: 10em;
+     clear: both;
+     background-color: var(--white);
+     height: 100%;
+     display: flex;
+ }
+
+ .updates .updates-main .right-float {
+     clear: left;
+     float: right;
+     margin-right: 10em;
+
+ }
+
+ .updates-content {
+     display: flex;
+     align-items: center;
+     position: relative;
+     padding: 15px;
+     background-color: var(--bgcolor);
+     margin: 5em;
+ }
+
+ .updates-date-share {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 10px
+ }
+
+ .updates-content .date {
+     color: var(--primary-color);
+     font-size: 15px;
+     font-weight: 600;
+     font-family: var(--second-font)
+ }
+
+ .updates-content .title {
+     font-size: 3em;
+     font-weight: 500;
+     color: var(--primary-color);
+ }
+
+ .updates .btn {
+     margin: 40px auto 0
+ }
+
+ .updates-images {
+     height: 70%
+ }
+
+ .updates-images img {
+     aspect-ratio: 1.1;
+     max-width: 373px;
+     max-height: 373px;
+     object-fit: cover;
+     border-radius: 3em;
+ }
+
+ .updates-content .share-btn {
+     margin: 0.5em 0;
+     font-size: 1.2em;
+     font-weight: 500;
+     /* border: .5px solid black; */
+     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+     padding: .5em 1.5em;
+     border-radius: 0.7em;
+ }
+
+ .updates-content .share-btn:hover {
+     /* border: 1px solid var(--white); */
+     background-color: var(--second-color);
+     color: var(--white);
+ }
+
+ .updates .btn {
+     font-size: 2.3em;
+     border: 1px solid var(--primary-color);
+     padding: 1em 2em;
+     border-radius: .6em;
+     transition: .5s;
+ }
+
+ /* --------------------------//updates//-------------------------------- */
