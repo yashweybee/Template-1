@@ -14,6 +14,10 @@
      margin: 0
  }
 
+ a {
+     text-decoration: none;
+ }
+
 
  /* -----------------slider ---------------------------------- */
 
@@ -47,6 +51,7 @@
      background-color: rgba(255, 255, 255, 0.8);
      color: #333;
      padding: 35px;
+     border-radius: .7em;
  }
 
  .slide .content h1 {
@@ -203,3 +208,187 @@
  }
 
  /* -----------------------//counter//--------------------------- */
+
+ /*------------------ Our-Services-------------------------------- */
+
+ .our-serivces .container {
+     text-align: center;
+ }
+
+ .our-serivces .container h2 {
+     padding: 1em 0em;
+     font-size: xxx-large;
+ }
+
+ .our-serivces .container .serivces-content .title {
+     padding: 0;
+     margin-bottom: 0.5em;
+     font-size: 2.1em;
+ }
+
+ .our-serivces-main {
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     margin: 25px 0
+ }
+
+ .our-serivces-items {
+     width: 22%;
+     background-color: var(--white);
+     padding: 17px;
+     /* border: 1px solid black; */
+     border-radius: 1em;
+     box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .our-serivces-items :hover {}
+
+ .serivces-content .title {
+     /* font-size: 22px; */
+     text-align: left
+ }
+
+ .our-serivces .btn {
+     margin: 10px auto 0
+ }
+
+ .serivces-images {
+     margin-bottom: 20px;
+     /* height: 70% */
+ }
+
+ .serivces-images img {
+     border-radius: 1em;
+ }
+
+ .share-btn {
+     cursor: pointer;
+     border: none;
+     background-color: transparent;
+ }
+
+ .services-btn a {
+     color: var(--dark);
+ }
+
+ .services-btn .share-btn img {
+     width: 1.3em;
+ }
+
+ .hover-underline-animation {
+     display: inline-block;
+     position: relative;
+     color: var(--primary-color);
+ }
+
+ .hover-underline-animation:after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(0);
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: var(--primary-color);
+     transform-origin: bottom right;
+     transition: transform 0.25s ease-out;
+ }
+
+ .hover-underline-animation:hover:after {
+     transform: scaleX(1);
+     transform-origin: bottom left;
+ }
+
+ /*------------------// Our-Services//-------------------------------- */
+
+ /* -------------------------News Letter----------------------------------*/
+ .newsletter {
+     padding: 2em;
+     background-color: var(--primary-color);
+     text-align: center;
+
+ }
+
+ .newsletter-inside {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+
+ }
+
+ .newsletter .title {
+     color: var(--white);
+     width: 40%;
+     margin: 0;
+     font-size: 3em;
+     letter-spacing: 1px
+ }
+
+ .newsletter form {
+     width: 60%
+ }
+
+ .form-row {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 2em;
+ }
+
+ .newsletter .form-row .form-control {
+     font-size: 19px;
+     border: 1px solid #fff;
+     font-family: var(--second-font);
+     background-color: transparent;
+     padding: 15px;
+     outline: 0;
+     color: var(--white);
+     width: 61%;
+     border-radius: .5em
+ }
+
+ .newsletter .form-row .form-control::placeholder {
+     color: #999
+ }
+
+ .newsletter button.subcribe {
+     font-size: 18px;
+     cursor: pointer;
+     transition: .5s;
+     background-color: var(--white);
+     color: var(--primary-color);
+     margin-left: 8px;
+     border: none;
+     outline: 0;
+     width: 200px;
+     height: 56px;
+     border-radius: .5em;
+ }
+
+ .newsletter button.subcribe:hover {
+     border: 1px solid var(--white);
+     background-color: var(--primary-color);
+     color: var(--white)
+ }
+
+ #NewsLetterFormResponse {
+     text-align: center;
+     margin-top: 15px;
+     color: var(--white);
+     font-size: 20px
+ }
+
+ #NewsLetterFormResponse .alert-success {
+     color: #267e3e
+ }
+
+ #NewsLetterFormResponse .alert-danger {
+     color: #e60303
+ }
+
+ /* -------------------------//News Letter//-----------------------------*/
