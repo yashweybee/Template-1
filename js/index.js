@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
     counter("count4", 0, 78, 1000);
 });
 
+
 function progressBarScroll() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
         height = document.documentElement.scrollHeight - document.documentElement.clientHeight,

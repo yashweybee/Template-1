@@ -1,0 +1,353 @@
+:root {
+    --primary-color: #645CAA;
+    --second-color: #BFACE0;
+    --white: #ffffff;
+    --dark: #506172;
+    --black: #000000;
+    --bgcolor: #ffffff;
+    --primary-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --second-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ------------------------------Progress-bar--------------------------- */
+.progress-head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.progress-container {
+    background-color: var(--white);
+    height: 10px;
+    width: 100%;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    height: 10px;
+    width: 0%;
+}
+
+/* ------------------------------//Progress-bar//--------------------------- */
+
+/* -------------------back-to-top----------------------------------- */
+#button svg {
+    fill: var(--white);
+    z-index: 999;
+    width: 3em;
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    background-color: var(--second-color);
+    border-radius: 0.7em;
+}
+
+/* -------------------back-to-top----------------------------------- */
+
+/* ------------------------------navbar--------------------------------- */
+.top-header {
+    margin-top: 1em;
+}
+
+.top-contact {
+    display: flex;
+}
+
+.top-header-items {
+    /* display: flex; */
+}
+
+.top-header-inside {
+    display: none;
+}
+
+.top-social ul {
+    display: flex;
+}
+
+.top-contact .icon svg,
+.top-header .social-media ul li a svg {
+    fill: var(--primary-color);
+    padding: 5px
+}
+
+.top-contact .icon,
+.top-header .social-media ul li a {
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--white);
+    height: 30px;
+    display: block;
+    transition: .5s
+}
+
+.top-contact .icon svg {
+    margin-top: 1px
+}
+
+.top-header .social-media ul li a:hover svg {
+    fill: var(--white)
+}
+
+.top-contact .icon svg,
+.top-header .social-media ul li a svg {
+    fill: var(--primary-color);
+    padding: 5px
+}
+
+.top-contact .icon svg {
+    margin-top: 1px
+}
+
+.nav-inside {
+    margin: 1em 0;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-nav {
+    font-size: 1.2em;
+    display: flex;
+    gap: 2em;
+}
+
+.navbar-nav li {
+    cursor: pointer;
+
+}
+
+.navbar-nav li a:hover {
+    color: var(--primary-color);
+}
+
+
+.navbar-toggler {
+    display: none;
+}
+
+.nav-items {
+    width: 10%
+}
+
+.nav-items img {
+    object-fit: cover;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--primary-color);
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* -------------------------------------//navbar//------------------------------------ */
+
+/* ---------------------------Site Banner Section----------------------- */
+.banner-area .container {
+    background-color: var(--primary-color);
+    padding: 5em;
+}
+
+.banner-area .container .banner-content .title {
+    text-align: center;
+    font-size: 2em;
+    color: var(--white);
+}
+
+/* ---------------------------//Site Banner Section//-------------------- */
+
+/* -------------------------Home About Section-------------------------- */
+.about-us-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7em;
+    margin: 6em 0;
+}
+
+.about-us-img {
+    width: 35em;
+    height: 25em;
+}
+
+.about-us-img img {
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.about-us-content {
+    text-align: left;
+}
+
+.about-us-content .title h1 {
+    font-size: 4em;
+    color: var(--primary-color);
+    display: inline;
+    margin: 2em 0;
+}
+
+
+.about-us-content .decs {
+    font-size: 1.3em;
+    width: 40em;
+}
+
+/* -------------------------//Home About Section//----------------------- */
+
+/* -------------------------Vision Mission Section----------------------- */
+.vision-mission-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7em;
+    margin: 7em 0;
+}
+
+.about-vm-image {
+    width: 35em;
+    height: 25em;
+    object-fit: cover;
+}
+
+.about-vm-image img {
+    border-radius: 1em;
+}
+
+.about-vm-content {
+    text-align: left;
+}
+
+.content-right {
+    text-align: right;
+}
+
+.about-vm-content .title {
+    font-size: 4em;
+    color: var(--primary-color);
+    display: inline;
+    margin: 2em 0;
+}
+
+.about-vm-content .decs {
+    font-size: 1.3em;
+    width: 40em;
+}
+
+/* -----------------------//Vision Mission Section//--------------------- */
+
+/* -------------------------News Letter----------------------------------*/
+.newsletter {
+    margin: 4em 0;
+    padding: 2em;
+    background-color: var(--primary-color);
+    text-align: center;
+
+}
+
+.newsletter-inside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.newsletter .title {
+    color: var(--white);
+    width: 40%;
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 1px
+}
+
+.newsletter form {
+    width: 60%
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.newsletter .form-row .form-control {
+    font-size: 19px;
+    border: 1px solid #fff;
+    font-family: var(--second-font);
+    background-color: transparent;
+    padding: 15px;
+    outline: 0;
+    color: var(--white);
+    width: 61%;
+    border-radius: .5em
+}
+
+.newsletter .form-row .form-control::placeholder {
+    color: var(--white)
+}
+
+.newsletter button.subcribe {
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s;
+    background-color: var(--white);
+    color: var(--primary-color);
+    margin-left: 8px;
+    border: none;
+    outline: 0;
+    width: 200px;
+    height: 56px;
+    border-radius: .5em;
+}
+
+.newsletter button.subcribe:hover {
+    border: 1px solid var(--white);
+    background-color: var(--primary-color);
+    color: var(--white)
+}
+
+#NewsLetterFormResponse {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--white);
+    font-size: 20px
+}
+
+/* -------------------------//News Letter//-----------------------------*/

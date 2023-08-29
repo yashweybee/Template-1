@@ -12,7 +12,7 @@
  body {
      font-family: var(--primary-font);
      padding: 0;
-     margin: 0
+     margin: 0;
  }
 
  a {
@@ -154,6 +154,7 @@
      object-fit: cover;
  }
 
+ /* -------------------------------------//navbar//------------------------------------ */
 
 
 
@@ -378,8 +379,6 @@
      justify-content: space-between;
      align-items: center;
  }
-
- .our-serivces-items :hover {}
 
  .serivces-content .title {
      /* font-size: 22px; */
