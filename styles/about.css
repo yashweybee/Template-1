@@ -351,3 +351,69 @@ ul {
 }
 
 /* -------------------------//News Letter//-----------------------------*/
+/* -------------------------Our Team Section---------------------------- */
+
+.our_team .container {
+    text-align: center;
+}
+
+.our_team .container .title {
+    margin: 3em 0;
+    font-size: 2.5em;
+}
+
+
+
+/* -----------------------//Our Team Section//-------------------------- */
+/* -----------------------Testimonial Section-------------------------- */
+.logo-slider {
+    margin: 6em 0;
+}
+
+.logo-slider .title {
+    text-align: center;
+    padding: 1em 0em;
+    font-size: xxx-large;
+}
+
+.container-fluid {
+    margin: 1em 4em;
+}
+
+.row {
+    display: flex;
+    overflow: hidden;
+}
+
+.imagegroup {
+    display: flex;
+    width: 100%;
+}
+
+.imagegroup img {
+    border-radius: 1em;
+    width: 38em;
+    height: 20em;
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.imagegroup {
+    animation: travel 20s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes travel {
+
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/*----------------------//Testimonial Section//-------------------------- */
