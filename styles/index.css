@@ -728,6 +728,16 @@
      height: 20px;
      fill: var(--white);
      padding: 8px;
+     /* border: 1px solid; */
+     background-color: var(--primary-color);
+     border-radius: 20%;
+ }
+
+ .footer-social ul li a svg:hover {
+     width: 20px;
+     height: 20px;
+     fill: var(--white);
+     padding: 8px;
      background-color: var(--primary-color);
      border-radius: 20%;
  }
@@ -743,7 +753,7 @@
  }
 
  .footer-links .navbar-nav .nav-item .nav-link {
-     color: var(--white)
+     color: var(--primary-color)
  }
 
  .footer-links .navbar-nav .nav-item .nav-link:after {
@@ -776,7 +786,7 @@
      display: block;
      text-align: center;
      line-height: 1.5;
-     color: var(--white);
+     /* color: var(--white); */
      font-family: var(--primary-font);
      font-weight: 400;
      letter-spacing: 1px;
@@ -784,11 +794,11 @@
  }
 
  .contact-info {
-     color: var(--white);
+     /* color: var(--white); */
  }
 
  .contact-info a {
-     color: var(--white);
+     /* color: var(--primary-color); */
  }
 
 
