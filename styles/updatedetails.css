@@ -138,8 +138,9 @@ ul {
 
 .tags-itmes ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .tags-itmes ul li {

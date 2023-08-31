@@ -137,6 +137,7 @@ ul {
 
 .updates .container {
     text-align: center;
+    margin: 4em 8em;
 }
 
 .updates .container h2 {
@@ -169,6 +170,12 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    transition: .5s;
+}
+
+.updates-items:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 32px #ffffff;
 }
 
 .updates-content .title {

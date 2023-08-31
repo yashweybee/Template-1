@@ -94,3 +94,8 @@ function progressBarScroll() {
 window.onscroll = function () {
     progressBarScroll();
 };
+
+
+// scroll
+window.onscroll = function (e) {
+};
