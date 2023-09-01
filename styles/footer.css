@@ -116,3 +116,23 @@
 }
 
 /*----------------------------//footer//------------------------------- */
+
+
+/*-------------------- footer------------------ */
+@media only screen and (max-width:1024px) {
+
+    .footer-inside {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social ul {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        padding: 0;
+    }
+
+    /*--------------------//footer//------------------ */
+}
