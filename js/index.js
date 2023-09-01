@@ -83,12 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
     counter("count4", 0, 78, 1000);
 });
 
-// scroll
-window.onscroll = function (e) {
-};
-
-
-
 
 
 document.querySelector(".navbar-toggler").addEventListener('click', handleToggleClick);

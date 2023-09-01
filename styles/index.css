@@ -42,7 +42,31 @@
 
  /* ------------------------------navbar--------------------------------- */
  .top-header {
-     display: none;
+     padding-top: 0.5em;
+     display: block;
+     background-color: var(--second-color);
+     height: 3em;
+ }
+
+ .top-header-inside {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .top-header-items {
+     display: flex;
+     gap: 2em;
+ }
+
+ .top-contact {
+     display: flex;
+     gap: 2em;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .top-contact .icon {
+     width: 2em;
  }
 
  .nav-inside {
@@ -442,7 +466,7 @@
 
  .social-media ul li a svg:hover {
      fill: black;
-     background-color: var(--white);
+     background-color: var(--second-color);
  }
 
  /* ----------------//share this on section//------------------------- */
