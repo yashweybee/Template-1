@@ -99,3 +99,22 @@ window.onscroll = function () {
 // scroll
 window.onscroll = function (e) {
 };
+
+
+document.querySelector(".navbar-toggler").addEventListener('click', handleToggleClick);
+
+function handleToggleClick() {
+    document.querySelector(".navbar").classList.toggle("show");
+}
+
+// document.ready(function () {
+//     document.getElementByClassName("dropdown").click(function () {
+//         document.getElementByClassName("dropdown-menu").classList.toggle("show");
+//     });
+// });
+
+// document.ready(function () {
+//     document.getElementByClassName("navbar-toggler").click(function () {
+//         document.getElementByClassName("navbar-collapse").classList.toggle("show");
+//     });
+// });

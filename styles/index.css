@@ -799,79 +799,158 @@
 
  @media only screen and (max-width:1024px) {
 
-     .newsletter .title,
-     .newsletter form {
-         width: 100%;
-         text-align: center
+     #button svg {
+         bottom: 3em;
+         right: 3em;
      }
 
-     .newsletter .form-row {
+     .about-us-inside {
+         flex-direction: column;
+         gap: 2em;
+     }
+
+     .about-us-content {
+         padding: 0 8em;
+     }
+
+     .about-us-content .title h1 {
+         font-size: 2.8em;
+     }
+
+     .about-us-img img {
+         width: 27em;
+         margin-right: 3em;
+     }
+
+     .counter .title {
+         font-size: xx-large;
+         text-decoration: underline;
+     }
+
+     .counter-inside {
+         flex-direction: column;
+     }
+
+     .count-up {
+         border: none
+     }
+
+     .our-serivces .container .serivces-content .title {
+         font-size: 1.5em;
+     }
+
+     .newsletter .title {
+         font-size: 1.9em;
+     }
+
+     .newsletter .form-row .form-control {
+         width: 50%;
+     }
+
+     .newsletter button.subcribe {
+         font-size: 16px;
+         width: 150px;
+     }
+
+     .updates .updates-main .updates-items {
+         margin-bottom: 4em;
+         margin-left: 0;
          justify-content: center;
-         margin-top: 20px
      }
 
-     .main-slider {
-         height: 450px
+     .updates .updates-main .right-float {
+         margin-right: 0;
      }
+
+     .updates-content {
+         margin: 0;
+         align-items: flex-start;
+     }
+
+     /*-------------------- footer------------------ */
+
+     .footer-inside {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .footer-items {
+         /* text-align: left; */
+         /* width: 25em; */
+     }
+
+     .footer-social ul {
+         padding: 0;
+     }
+
+     .navbar-nav {
+         padding: 0;
+     }
+
+     /*--------------------//footer//------------------ */
+
  }
 
  @media only screen and (max-width:991px) {
 
-     .main-header,
-     .nav-inside,
-     .navbar-toggler {
-         display: block
+     #button svg {
+         right: 1em;
+         bottom: 1em;
      }
 
-     .nav-inside,
+     .nav-inside {
+         display: flex;
+     }
+
      .nav-items {
-         max-height: 80px
+         display: flex;
      }
 
-     .navbar-brand img {
-         max-width: 250px;
-         max-height: 70px
+     .navbar-toggler {
+         display: block;
+         background: transparent;
+         border: none;
+         cursor: pointer;
      }
 
-     .navbar-collapse .navbar-nav {
+     .navbar {
+         display: none;
+         z-index: 999;
+         background-color: #d7cde9;
+         position: absolute;
+         top: 6em;
+         width: 100%;
+         text-align: center;
+         height: 50em;
+     }
+
+     .navbar-nav {
+         display: flex;
          flex-direction: column;
-         opacity: 0;
-         height: 0;
-         transition: .5s;
-         visibility: hidden
      }
 
-     .navbar-collapse.show .navbar-nav {
-         height: 100%;
-         visibility: visible;
-         opacity: 1;
-         background-color: var(--bgcolor);
-         z-index: 1;
-         padding: 15px
+     .dropdown {
+         float: none;
      }
 
-     .navbar-collapse.show .navbar-nav .dropdown-menu {
-         position: relative;
-         top: 10px;
-         left: 10px;
-         max-width: 100%
+     .navbar-nav li {
+         font-size: 1.5em;
+         display: block;
      }
 
-     .dropdown:after {
-         top: 10px
+     .show {
+         display: block;
      }
 
-     .our-serivces-items,
-     .updates .updates-main .updates-items {
-         width: 44%
+
+
+     .about-us-img img {
+         width: 25em;
      }
 
-     .footer-items:first-child {
-         width: 100%
-     }
-
-     .main-slider {
-         height: 350px
+     .our-serivces-items {
+         margin: 1em 0;
+         width: 30%;
      }
  }
 
