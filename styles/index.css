@@ -81,47 +81,25 @@
      object-fit: cover;
  }
 
-
- .dropdown {
-     float: left;
-     overflow: hidden;
- }
-
- .dropdown .dropbtn {
-     /* font-size: 16px; */
-     border: none;
-     outline: none;
-     /* color: white; */
-     padding: 14px 16px;
-     background-color: inherit;
-     font-family: inherit;
-     margin: 0;
- }
-
- .dropdown-content {
-     display: none;
+ .dropdown-menu {
+     /* display: none; */
      position: absolute;
-     /* background-color: #f9f9f9; */
      min-width: 160px;
+     background-color: var(--white);
      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
      z-index: 1;
+     text-align: center;
+     padding: 1em;
+     border-radius: 1em;
  }
 
- .dropdown-content a {
-     float: none;
-     color: black;
-     padding: 12px 16px;
-     text-decoration: none;
+ .dropdown-menu .dropdown-content a {
      display: block;
-     text-align: left;
+     margin: 0.5em;
  }
 
- .dropdown-content a:hover {
-     /* background-color: #ddd; */
- }
-
- .dropdown:hover .dropdown-content {
-     display: block;
+ .hide-block {
+     display: none;
  }
 
  /* -------------------------------------//navbar//------------------------------------ */
@@ -613,7 +591,7 @@
      max-width: 373px;
      max-height: 373px;
      object-fit: cover;
-     border-radius: 3em;
+     border-radius: 1em;
  }
 
  .updates-content .share-btn {
@@ -968,6 +946,12 @@
          float: none;
      }
 
+     .dropdown-menu {
+         position: static;
+         background: transparent;
+         box-shadow: none;
+     }
+
      .navbar-nav li {
          font-size: 1.5em;
          display: block;
@@ -977,6 +961,9 @@
          display: block;
      }
 
+     .updates-main {
+         margin: 1em 3em;
+     }
 
 
      .about-us-img img {
@@ -990,89 +977,95 @@
  }
 
  @media only screen and (max-width:768px) {
-     .main-control {
-         display: none
+     .slide .content {
+         bottom: 70px;
+         left: -540px;
      }
 
-     .slider-content {
-         left: 0
+     .our-serivces-main {
+         flex-direction: column;
+         align-items: center;
      }
 
-     .newsletter .form-row .form-control,
-     .slider-content .decs,
-     .slider-content .title {
-         width: 100%
-     }
-
-     .slider-content .title {
-         font-size: 32px
-     }
-
-     .about-us-content,
-     .about-us-img {
-         flex: auto
-     }
-
-     .counter .count-up {
+     .our-serivces-items {
          width: 50%;
-         margin-bottom: 20px
      }
 
-     .newsletter .form-row {
-         flex-wrap: wrap
-     }
- }
-
- @media only screen and (max-width:767px) {
-     .top-header {
-         display: none
+     .modal-body {
+         width: 75%;
+         height: 12em;
      }
 
-     .footer-items {
-         width: 100%
+     .newsletter {
+         padding: 1em;
+     }
+
+     .newsletter .title {
+         width: auto;
+         font-size: 2em;
+     }
+
+     .newsletter .form-row .form-control {
+         font-size: 13px;
+     }
+
+     .newsletter button.subcribe {
+         height: 48px;
+     }
+
+     .updates-content .title {
+         font-size: 2.3em;
+     }
+
+     .updates .btn {
+         font-size: 1.5em;
+     }
+
+     .imagegroup img {
+         width: auto;
+         height: 15em;
      }
  }
 
  @media only screen and (max-width:600px) {
+     .slide .content {
+         width: 25em;
+     }
 
-     .our-serivces-items,
+     .about-us-img img {
+         margin-right: 0;
+     }
+
+     .about-us-content {
+         padding: 0 3em;
+     }
+
      .updates .updates-main .updates-items {
-         width: 90%
-     }
-
-     .serivces-images,
-     .updates-images {
-         height: auto
-     }
-
-     .main-slider {
-         height: 250px
+         flex-direction: column;
      }
  }
 
- @media only screen and (max-width:575px) {
-     h1 {
-         font-size: 36px
+ @media only screen and (max-width:550px) {
+     #button svg {
+         right: 3em;
+         bottom: 1em;
      }
 
-     p {
-         font-size: 14px;
-         line-height: 28px
+     .slider {
+         display: none;
      }
 
-     .slider-content {
-         top: 10%
+     .about-us-inside {
+         margin: auto;
      }
 
-     .spad {
-         padding: 40px 0
+     .count-up .counter-count {
+         font-size: 2em;
      }
 
-     .main-footer {
-         padding: 20px 0
+     .count-up .counter-text {
+         font-size: 1.5em;
      }
 
-     .counter .count-up {
-         width: 100%
-     }
+
  }

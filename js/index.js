@@ -38,7 +38,7 @@ const prevSlide = () => {
 };
 
 // Button events
-next.addEventListener('click', e => {
+next.addEventListener('click', () => {
     nextSlide();
     if (auto) {
         clearInterval(slideInterval);
@@ -106,4 +106,10 @@ document.querySelector(".share-btn").addEventListener("click", handleShareBtn)
 
 function handleShareBtn() {
     document.querySelector(".modal").classList.remove("hide-block");
+}
+
+document.getElementById("dropDown-text").addEventListener("click", handleDropDown)
+
+function handleDropDown() {
+    document.querySelector(".dropdown-menu").classList.toggle("hide-block");
 }
