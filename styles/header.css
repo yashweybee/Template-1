@@ -1,0 +1,94 @@
+/* ------------------------------navbar--------------------------------- */
+.top-header {
+    padding-top: 0.5em;
+    display: block;
+    background-color: var(--second-color);
+    height: 3em;
+}
+
+.top-header-inside {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-header-items {
+    display: flex;
+    gap: 2em;
+}
+
+.top-contact {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-contact .icon {
+    width: 2em;
+}
+
+.nav-inside {
+    margin: 1em 0;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-nav {
+    font-size: 1.2em;
+    display: flex;
+    gap: 2em;
+}
+
+.navbar-nav li {
+    cursor: pointer;
+
+}
+
+.navbar-nav li a:hover {
+    color: var(--primary-color);
+}
+
+
+.navbar-toggler {
+    display: none;
+}
+
+.nav-items {
+    width: 10%
+}
+
+.nav-items img {
+    object-fit: cover;
+}
+
+.dropdown-menu {
+    /* display: none; */
+    position: absolute;
+    min-width: 160px;
+    background-color: var(--white);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.dropdown-menu .dropdown-content a {
+    display: block;
+    margin: 0.5em;
+}
+
+.hide-block {
+    display: none;
+}
+
+/* -------------------------------------//navbar//------------------------------------ */
+
+@media only screen and (max-width:768px) {
+
+    .top-header {
+        display: none;
+    }
+}
