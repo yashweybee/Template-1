@@ -748,20 +748,58 @@ a:hover {
 
 @media only screen and (max-width:1024px) {
 
-    .newsletter .title,
-    .newsletter form {
-        width: 100%;
-        text-align: center
+    #button svg {
+        bottom: 3em;
+        right: 3em;
     }
 
-    .newsletter .form-row {
-        justify-content: center;
-        margin-top: 20px
+    .banner-area .container {
+        padding: 2em;
     }
 
-    .main-slider {
-        height: 450px
+    .about-us-content .title h1 {
+        font-size: 2em;
     }
+
+    .about-us-inside {
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+    }
+
+    .newsletter .title {
+        font-size: 1.9em;
+    }
+
+    .newsletter .form-row .form-control {
+        width: 50%;
+    }
+
+    .newsletter button.subcribe {
+        font-size: 16px;
+        width: 150px;
+    }
+
+    /*-------------------- footer------------------ */
+
+    .footer-inside {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-items {
+        /* text-align: left; */
+        /* width: 25em; */
+    }
+
+    .footer-social ul {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        padding: 0;
+    }
+
+    /*--------------------//footer//------------------ */
 }
 
 @media only screen and (max-width:991px) {

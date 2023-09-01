@@ -101,20 +101,22 @@ window.onscroll = function (e) {
 };
 
 
+
+
+
 document.querySelector(".navbar-toggler").addEventListener('click', handleToggleClick);
 
 function handleToggleClick() {
     document.querySelector(".navbar").classList.toggle("show");
 }
 
-// document.ready(function () {
-//     document.getElementByClassName("dropdown").click(function () {
-//         document.getElementByClassName("dropdown-menu").classList.toggle("show");
-//     });
-// });
+document.querySelector(".modal-body button").addEventListener("click", handleExitBtn)
+function handleExitBtn() {
+    document.querySelector(".modal").classList.add("hide-block");
+}
 
-// document.ready(function () {
-//     document.getElementByClassName("navbar-toggler").click(function () {
-//         document.getElementByClassName("navbar-collapse").classList.toggle("show");
-//     });
-// });
+document.querySelector(".services-btn button").addEventListener("click", handleShareBtn)
+
+function handleShareBtn() {
+    document.querySelector(".modal").classList.remove("hide-block");
+}
