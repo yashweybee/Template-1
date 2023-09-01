@@ -691,8 +691,21 @@ a:hover {
         margin-bottom: 20px
     }
 
-    .newsletter .form-row {
-        flex-wrap: wrap
+    .newsletter {
+        padding: 1em;
+    }
+
+    .newsletter .title {
+        width: auto;
+        font-size: 2em;
+    }
+
+    .newsletter .form-row .form-control {
+        font-size: 13px;
+    }
+
+    .newsletter button.subcribe {
+        height: 48px;
     }
 }
 
