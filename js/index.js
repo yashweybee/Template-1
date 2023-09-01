@@ -83,19 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
     counter("count4", 0, 78, 1000);
 });
 
-
-function progressBarScroll() {
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
-        height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
-        scrolled = (winScroll / height) * 100;
-    document.getElementById("progressBar").style.width = scrolled + "%";
-}
-
-window.onscroll = function () {
-    progressBarScroll();
-};
-
-
 // scroll
 window.onscroll = function (e) {
 };
@@ -115,7 +102,7 @@ function handleExitBtn() {
     document.querySelector(".modal").classList.add("hide-block");
 }
 
-document.querySelector(".services-btn button").addEventListener("click", handleShareBtn)
+document.querySelector(".share-btn").addEventListener("click", handleShareBtn)
 
 function handleShareBtn() {
     document.querySelector(".modal").classList.remove("hide-block");

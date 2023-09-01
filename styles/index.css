@@ -25,29 +25,6 @@
      list-style: none;
  }
 
- /* ------------------------------Progress-bar--------------------------- */
- .progress-head {
-     position: fixed;
-     top: 0;
-     width: 100%;
-     z-index: 1;
- }
-
- .progress-container {
-     background-color: var(--white);
-     height: 10px;
-     width: 100%;
- }
-
- .progress-bar {
-     background-color: var(--primary-color);
-     height: 10px;
-     width: 0%;
- }
-
- /* ------------------------------//Progress-bar//--------------------------- */
-
-
  /* -------------------back-to-top----------------------------------- */
  #button svg {
      fill: var(--white);
