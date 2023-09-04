@@ -438,13 +438,17 @@
  /* ----------------share this on section------------------------- */
 
  .modal-body {
-     position: sticky;
+     position: fixed;
+     top: 10em;
+     left: 0;
+     right: 0;
      z-index: 9999;
      background: var(--second-color);
      text-align: center;
      width: 25%;
      margin: auto;
      border-radius: 1em;
+     box-shadow: 0px 0px 25px var(--black);
  }
 
  .modal-body .title {
@@ -469,6 +473,8 @@
 
  .hide-block {
      display: none;
+     /* opacity: 0; */
+     /* visibility: hidden; */
  }
 
  .social-media ul {
@@ -495,6 +501,8 @@
      background-color: var(--second-color);
      box-shadow: 0px 0px 0px 1px var(--primary-color) inset;
  }
+
+
 
  /* ----------------//share this on section//------------------------- */
 

@@ -110,7 +110,10 @@ function handleExitBtn() {
     document.querySelector(".modal").classList.add("hide-block");
 }
 
-document.querySelector(".share-btn").addEventListener("click", handleShareBtn)
+const shareBtns = document.querySelectorAll(".share-btn")
+shareBtns.forEach(btn => {
+    btn.addEventListener("click", handleShareBtn)
+})
 
 function handleShareBtn() {
     document.querySelector(".modal").classList.remove("hide-block");
