@@ -83,11 +83,17 @@ document.addEventListener("DOMContentLoaded", () => {
     counter("count4", 0, 78, 1000);
 });
 
+window.onscroll = function () { myFunction() };
+
+function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+}
 
 
 document.querySelector(".navbar-toggler").addEventListener('click', handleToggleClick);
-console.log(document.querySelector(".navbar-toggler"));
-
 function handleToggleClick() {
     console.log("click");
     document.querySelector(".navbar").classList.toggle("show");

@@ -40,8 +40,33 @@
 
  /* -------------------back-to-top----------------------------------- */
 
+ /* progress */
+ .header {
+     position: fixed;
+     top: 0;
+     z-index: 1;
+     width: 100%;
+     background-color: var(--white);
+ }
+
+ .progress-container {
+     width: 100%;
+     height: 8px;
+     background: var(--white);
+ }
+
+ .progress-bar {
+     height: 8px;
+     background: var(--primary-color);
+     width: 0%;
+ }
+
+ /* progress */
+
+
  /* ------------------------------navbar--------------------------------- */
  .top-header {
+     margin-top: 0.5em;
      padding-top: 0.5em;
      display: block;
      background-color: var(--second-color);
@@ -386,7 +411,7 @@
  .hover-underline-animation {
      display: inline-block;
      position: relative;
-     color: var(--primary-color);
+     /* color: var(--primary-color); */
  }
 
  .hover-underline-animation:after {
@@ -413,6 +438,8 @@
  /* ----------------share this on section------------------------- */
 
  .modal-body {
+     position: sticky;
+     z-index: 9999;
      background: var(--second-color);
      text-align: center;
      width: 25%;
@@ -466,6 +493,7 @@
  .social-media ul li a svg:hover {
      fill: black;
      background-color: var(--second-color);
+     box-shadow: 0px 0px 0px 1px var(--primary-color) inset;
  }
 
  /* ----------------//share this on section//------------------------- */
@@ -621,8 +649,8 @@
      margin: 0.5em 0;
      font-size: 1.2em;
      font-weight: 500;
-     /* border: .5px solid black; */
-     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+     box-shadow: 0px 0px 0px 1px var(--primary-color) inset;
+     /* box-shadow: 0 0 7px rgba(0, 0, 0, 0.3); */
      padding: .5em 1.5em;
      border-radius: 0.7em;
      transition: .5s;
@@ -630,7 +658,7 @@
 
  .updates-content .share-btn:hover {
      /* border: 1px solid var(--white); */
-     background-color: var(--second-color);
+     background-color: var(--primary-color);
      color: var(--white);
  }
 

@@ -58,6 +58,14 @@
 
 <body itemscope="" itemtype="http://schema.org/LocalBusiness">
 
+    <!-- progress-bar -->
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <!-- progress-bar -->
+
     <!-- Back to Top -->
     <a id="button" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 128 128" viewBox="0 0 128 128">
@@ -576,6 +584,14 @@
     <!--Copy Right Sections-end-->
 
     <script>
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
         document.querySelector(".navbar-toggler").addEventListener('click', handleToggleClick);
         console.log(document.querySelector(".navbar-toggler"));
 
