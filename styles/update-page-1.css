@@ -277,8 +277,22 @@ ul {
 
 /*------------------//Updates Section//-------------------------------- */
 
-
 @media only screen and (max-width:1024px) {
+
+    #button svg {
+        bottom: 2em;
+        right: 2em;
+    }
+
+    .banner-area .container {
+        padding: 2em;
+        font-size: .6em;
+    }
+
+    .updates-items {
+        width: 30%;
+    }
+
     .newsletter .title {
         font-size: 1.9em;
     }
@@ -293,62 +307,16 @@ ul {
     }
 }
 
-@media only screen and (max-width:991px) {
-
-    .main-header,
-    .nav-inside,
-    .navbar-toggler {
-        display: block
-    }
-
-    .nav-inside,
-    .nav-items {
-        max-height: 80px
-    }
-
-    .navbar-brand img {
-        max-width: 250px;
-        max-height: 70px
-    }
-
-    .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        opacity: 0;
-        height: 0;
-        transition: .5s;
-        visibility: hidden
-    }
-
-    .navbar-collapse.show .navbar-nav {
-        height: 100%;
-        visibility: visible;
-        opacity: 1;
-        background-color: var(--bgcolor);
-        z-index: 1;
-        padding: 15px
-    }
-
-    .navbar-collapse.show .navbar-nav .dropdown-menu {
-        position: relative;
-        top: 10px;
-        left: 10px;
-        max-width: 100%
-    }
-
-    .dropdown:after {
-        top: 10px
-    }
-
-    .updates .updates-main .updates-items {
-        width: 44%
-    }
-
-    .footer-items:first-child {
-        width: 100%
-    }
-}
-
 @media only screen and (max-width:768px) {
+
+    .updates .container {
+        margin: 4em 3em;
+    }
+
+    .updates-items {
+        width: 40%;
+    }
+
     .newsletter {
         padding: 1em;
     }
@@ -365,55 +333,37 @@ ul {
     .newsletter button.subcribe {
         height: 48px;
     }
+
 }
 
-@media only screen and (max-width:767px) {
-    .top-header {
-        display: none
-    }
-
-    .footer-items {
-        width: 100%
-    }
-}
-
-@media only screen and (max-width:600px) {
-    .updates .updates-main .updates-items {
-        width: 90%
-    }
-
-    .updates-images {
-        height: auto
-    }
-}
 
 @media only screen and (max-width:575px) {
-    h1 {
-        font-size: 36px
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 28px
-    }
-
-    .spad {
-        padding: 40px 0
-    }
-
-    .main-footer {
-        padding: 20px 0
+    #button svg {
+        bottom: 1em;
+        right: 1em;
     }
 }
 
-@media only screen and (max-width:450px) {
-    .pagination-item {
-        flex-wrap: wrap;
-        justify-content: center
+@media only screen and (max-width:425px) {
+
+    .updates-items {
+        width: 80%;
     }
 
-    .pagination-item .btn {
-        width: 100%;
-        margin: 0
+    .btn {
+        font-size: 1em;
+    }
+
+    .newsletter .title {
+        font-size: 1.4em;
+    }
+
+    .newsletter form {
+        width: 80%;
+    }
+
+    .newsletter button.subcribe {
+        font-size: 13px;
+        width: 100px;
     }
 }

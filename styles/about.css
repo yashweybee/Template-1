@@ -535,36 +535,54 @@ a:hover {
     font-size: 15px
 }
 
-.contact-info {
-    /* color: var(--white); */
-}
-
-.contact-info a {
-    /* color: var(--primary-color); */
-}
-
-
 /* -------------------------------------------------------------------- */
 
 @media only screen and (max-width:1024px) {
 
     #button svg {
-        bottom: 3em;
-        right: 3em;
+        bottom: 2em;
+        right: 2em;
     }
 
     .banner-area .container {
         padding: 2em;
+        font-size: .6em;
+    }
+
+    .about-us-img {
+        width: 25em;
+        height: 20em;
     }
 
     .about-us-content .title h1 {
         font-size: 2em;
     }
 
-    .about-us-inside {
-        /* flex-direction: column; */
-        /* align-items: flex-start; */
+    .about-us-content .decs {
+        font-size: 1em;
+        width: 20em;
     }
+
+    .about-vm-image {
+        width: 25em;
+        height: 20em;
+    }
+
+    .about-vm-content .decs {
+        font-size: 1em;
+        width: 20em;
+    }
+
+    .about-vm-content .title {
+        font-size: 3em;
+    }
+
+    .team-member {
+        width: 25%;
+    }
+
+
+
 
     .newsletter .title {
         font-size: 1.9em;
@@ -602,94 +620,24 @@ a:hover {
     /*--------------------//footer//------------------ */
 }
 
-@media only screen and (max-width:991px) {
-
-    .main-header,
-    .nav-inside,
-    .navbar-toggler {
-        display: block
-    }
-
-    .nav-inside,
-    .nav-items {
-        max-height: 80px
-    }
-
-    .navbar-brand img {
-        max-width: 250px;
-        max-height: 70px
-    }
-
-    .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        opacity: 0;
-        height: 0;
-        transition: .5s;
-        visibility: hidden
-    }
-
-    .navbar-collapse.show .navbar-nav {
-        height: 100%;
-        visibility: visible;
-        opacity: 1;
-        background-color: var(--bgcolor);
-        z-index: 1;
-        padding: 15px
-    }
-
-    .navbar-collapse.show .navbar-nav .dropdown-menu {
-        position: relative;
-        top: 10px;
-        left: 10px;
-        max-width: 100%
-    }
-
-    .dropdown:after {
-        top: 10px
-    }
-
-    .our-serivces-items,
-    .updates .updates-main .updates-items {
-        width: 44%
-    }
-
-    .footer-items:first-child {
-        width: 100%
-    }
-
-    .main-slider {
-        height: 350px
-    }
-}
-
 @media only screen and (max-width:768px) {
-    .main-control {
-        display: none
+    .about-us-inside {
+        gap: 2em;
     }
 
-    .slider-content {
-        left: 0
-    }
-
-    .newsletter .form-row .form-control,
-    .slider-content .decs,
-    .slider-content .title {
-        width: 100%
-    }
-
-    .slider-content .title {
-        font-size: 32px
-    }
-
-    .about-us-content,
     .about-us-img {
-        flex: auto
+        width: 20em;
     }
 
-    .counter .count-up {
-        width: 50%;
-        margin-bottom: 20px
+    .vision-mission-items {
+        gap: 2em;
     }
+
+    .about-vm-image {
+        width: 20em;
+    }
+
+
 
     .newsletter {
         padding: 1em;
@@ -709,56 +657,110 @@ a:hover {
     }
 }
 
-@media only screen and (max-width:767px) {
-    .top-header {
-        display: none
-    }
-
-    .footer-items {
-        width: 100%
-    }
-}
-
 @media only screen and (max-width:600px) {
-
-    .our-serivces-items,
-    .updates .updates-main .updates-items {
-        width: 90%
+    .about-us-inside {
+        flex-direction: column;
     }
 
-    .serivces-images,
-    .updates-images {
-        height: auto
+    .about-us-content {
+        text-align: center;
     }
 
-    .main-slider {
-        height: 250px
+    .vision-mission-items {
+        flex-direction: column;
+    }
+
+    .about-vm-content {
+        text-align: center;
+    }
+
+    .team_inner {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .team-member {
+        width: 35%;
+    }
+
+    .testi-item {
+        flex-direction: column;
+        gap: 5em;
     }
 }
 
 @media only screen and (max-width:575px) {
-    h1 {
-        font-size: 36px
+    #button svg {
+        bottom: 1em;
+        right: 1em;
     }
 
-    p {
-        font-size: 14px;
-        line-height: 28px
+    .about-us-inside {
+        margin: 2em 0;
     }
 
-    .slider-content {
-        top: 10%
+    .about-vm-content .title {
+        font-size: 2em;
     }
 
-    .spad {
-        padding: 40px 0
+    .about-vm-content .decs {
+        width: 27em;
+    }
+}
+
+@media only screen and (max-width:425px) {
+
+    .about-vm-content .decs {
+        width: 20em;
     }
 
-    .main-footer {
-        padding: 20px 0
+    .team-member {
+        width: 50%;
     }
 
-    .counter .count-up {
-        width: 100%
+    .our_team .container .title {
+        font-size: 2em;
+    }
+
+    .team-member .team-member-desc .title {
+        font-size: 1.5em;
+    }
+
+    .testimonial_section .container .title {
+        font-size: 2em;
+    }
+
+
+
+    .newsletter .title {
+        font-size: 1.4em;
+    }
+
+    .newsletter form {
+        width: 80%;
+    }
+
+    .newsletter button.subcribe {
+        font-size: 13px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+    .about-us-img {
+        width: 19em;
+    }
+
+    .about-us-content .decs {
+        width: 17em;
+    }
+
+    .about-vm-image {
+        width: 19em;
+    }
+
+    .about-vm-content .decs {
+        width: 17em;
     }
 }

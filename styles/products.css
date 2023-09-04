@@ -256,14 +256,22 @@ ul {
 
 /* -------------------------//News Letter//-----------------------------*/
 
-
-@media only screen and (max-width:1199px) {
-    .our-serivces-items {
-        width: 25%
-    }
-}
-
 @media only screen and (max-width:1024px) {
+
+    #button svg {
+        bottom: 2em;
+        right: 2em;
+    }
+
+    .banner-area .container {
+        padding: 2em;
+        font-size: .6em;
+    }
+
+    .our-serivces .container .serivces-content .title {
+        font-size: 1.5em;
+    }
+
 
     .newsletter .title {
         font-size: 1.9em;
@@ -279,62 +287,12 @@ ul {
     }
 }
 
-@media only screen and (max-width:991px) {
-
-    .main-header,
-    .nav-inside,
-    .navbar-toggler {
-        display: block
-    }
-
-    .nav-inside,
-    .nav-items {
-        max-height: 80px
-    }
-
-    .navbar-brand img {
-        max-width: 250px;
-        max-height: 70px
-    }
-
-    .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        opacity: 0;
-        height: 0;
-        transition: .5s;
-        visibility: hidden
-    }
-
-    .navbar-collapse.show .navbar-nav {
-        height: 100%;
-        visibility: visible;
-        opacity: 1;
-        background-color: var(--bgcolor);
-        z-index: 1;
-        padding: 15px
-    }
-
-    .navbar-collapse.show .navbar-nav .dropdown-menu {
-        position: relative;
-        top: 10px;
-        left: 10px;
-        max-width: 100%
-    }
-
-    .dropdown:after {
-        top: 10px
-    }
+@media only screen and (max-width:768px) {
 
     .our-serivces-items {
-        width: 44%
+        width: 35%;
     }
 
-    .footer-items:first-child {
-        width: 100%
-    }
-}
-
-@media only screen and (max-width:768px) {
     .newsletter {
         padding: 1em;
     }
@@ -354,41 +312,42 @@ ul {
 
 }
 
-@media only screen and (max-width:767px) {
-    .top-header {
-        display: none
-    }
-
-    .footer-items {
-        width: 100%
-    }
-}
-
-@media only screen and (max-width:600px) {
-    .our-serivces-items {
-        width: 90%
-    }
-
-    .serivces-images {
-        height: auto
-    }
-}
 
 @media only screen and (max-width:575px) {
-    h1 {
-        font-size: 36px
+    #button svg {
+        bottom: 1em;
+        right: 1em;
+    }
+}
+
+@media only screen and (max-width:425px) {
+
+    .our-serivces-items {
+        width: 115%;
     }
 
-    p {
-        font-size: 14px;
-        line-height: 28px
+    .newsletter .title {
+        font-size: 1.4em;
     }
 
-    .spad {
-        padding: 40px 0
+    .newsletter form {
+        width: 80%;
     }
 
-    .main-footer {
-        padding: 20px 0
+    .newsletter button.subcribe {
+        font-size: 13px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .our-serivces-items {
+        width: 180%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .our-serivces-items {
+        width: 290%;
     }
 }

@@ -239,8 +239,27 @@ ul {
 
 /* -------------------------//News Letter//-----------------------------*/
 
-
 @media only screen and (max-width:1024px) {
+
+    #button svg {
+        bottom: 2em;
+        right: 2em;
+    }
+
+    .banner-area .container {
+        padding: 2em;
+        font-size: .6em;
+    }
+
+    .update-detials-content,
+    .tag-share {
+        margin: 1em 15em;
+    }
+
+    .update-item .update-detials-image {
+        width: 40%;
+        height: 22em;
+    }
 
     .newsletter .title {
         font-size: 1.9em;
@@ -256,58 +275,21 @@ ul {
     }
 }
 
-@media only screen and (max-width:991px) {
-
-    .main-header,
-    .nav-inside,
-    .navbar-toggler {
-        display: block
-    }
-
-    .nav-inside,
-    .nav-items {
-        max-height: 80px
-    }
-
-    .navbar-brand img {
-        max-width: 250px;
-        max-height: 70px
-    }
-
-    .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        opacity: 0;
-        height: 0;
-        transition: .5s;
-        visibility: hidden
-    }
-
-    .navbar-collapse.show .navbar-nav {
-        height: 100%;
-        visibility: visible;
-        opacity: 1;
-        background-color: var(--bgcolor);
-        z-index: 1;
-        padding: 15px
-    }
-
-    .navbar-collapse.show .navbar-nav .dropdown-menu {
-        position: relative;
-        top: 10px;
-        left: 10px;
-        max-width: 100%
-    }
-
-    .dropdown:after {
-        top: 10px
-    }
-
-    .footer-items:first-child {
-        width: 100%
-    }
-}
-
 @media only screen and (max-width:768px) {
+
+    .update-detials-content .title {
+        font-size: 2em;
+    }
+
+    .update-detials-content,
+    .tag-share {
+        margin: 1em 10em;
+    }
+
+    .update-item .update-detials-image {
+        width: 40%;
+        height: 19em;
+    }
 
     .newsletter {
         padding: 1em;
@@ -326,47 +308,68 @@ ul {
         height: 48px;
     }
 
-    .share {
-        margin-top: 20px
-    }
-
-    .update-detials-content,
-    .update-detials-image {
-        flex: auto
-    }
 }
 
-@media only screen and (max-width:767px) {
-    .top-header {
-        display: none
-    }
-
-    .footer-items {
-        width: 100%
-    }
-}
 
 @media only screen and (max-width:575px) {
-    h1 {
-        font-size: 36px
+    #button svg {
+        bottom: 1em;
+        right: 1em;
     }
 
-    p {
-        font-size: 14px;
-        line-height: 28px
-    }
 
-    .spad {
-        padding: 40px 0
-    }
-
-    .main-footer {
-        padding: 20px 0
+    .update-item .update-detials-image {
+        width: 50%;
+        height: 19em;
     }
 }
 
 @media only screen and (max-width:425px) {
-    .updates-detials-inside {
-        padding: 25px 10px
+
+    .update-item .update-detials-image {
+        width: 70%;
+        height: 19em;
+    }
+
+    .update-detials-content,
+    .tag-share {
+        margin: 1em 4.5em;
+    }
+
+    .tags-itmes ul,
+    .share-social ul {
+        padding-left: 0;
+    }
+
+    .newsletter .title {
+        font-size: 1.4em;
+    }
+
+    .newsletter form {
+        width: 80%;
+    }
+
+    .newsletter button.subcribe {
+        font-size: 13px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .share-social ul {
+        gap: 1em;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .update-item .update-detials-image {
+        width: 85%;
+        height: 19em;
+    }
+
+    .update-detials-content,
+    .tag-share {
+        margin: 1em 3em;
+
     }
 }

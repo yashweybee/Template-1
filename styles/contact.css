@@ -310,6 +310,28 @@ ul {
 /* -------------------------//News Letter//-----------------------------*/
 
 @media only screen and (max-width:1024px) {
+    .banner-area .container {
+        padding: 2em;
+        font-size: .6em;
+    }
+
+    .contact-custom-item .decs {
+        font-size: 1em;
+        width: 25em;
+    }
+
+    .contact-custom-item {
+        width: 25em;
+        height: 20em;
+    }
+
+    .contact-us-items {
+        width: 100%
+    }
+
+    .contact-ditails {
+        width: 18em;
+    }
 
     .newsletter .title {
         font-size: 1.9em;
@@ -324,63 +346,24 @@ ul {
         width: 150px;
     }
 
-    .contact-us-items {
-        width: 55%
-    }
 }
 
-@media only screen and (max-width:991px) {
-
-    .main-header,
-    .nav-inside,
-    .navbar-toggler {
-        display: block
-    }
-
-    .nav-inside,
-    .nav-items {
-        max-height: 80px
-    }
-
-    .navbar-brand img {
-        max-width: 250px;
-        max-height: 70px
-    }
-
-    .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        opacity: 0;
-        height: 0;
-        transition: .5s;
-        visibility: hidden
-    }
-
-    .navbar-collapse.show .navbar-nav {
-        height: 100%;
-        visibility: visible;
-        opacity: 1;
-        background-color: var(--bgcolor);
-        z-index: 1;
-        padding: 15px
-    }
-
-    .navbar-collapse.show .navbar-nav .dropdown-menu {
-        position: relative;
-        top: 10px;
-        left: 10px;
-        max-width: 100%
-    }
-
-    .dropdown:after {
-        top: 10px
-    }
-
-    .footer-items:first-child {
-        width: 100%
-    }
-}
+@media only screen and (max-width:991px) {}
 
 @media only screen and (max-width:768px) {
+    .contact-custom-inside {
+        flex-direction: column;
+        gap: 4em;
+        margin: 4em 0;
+    }
+
+    .contact-us-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+
     .newsletter {
         padding: 1em;
     }
@@ -397,43 +380,47 @@ ul {
     .newsletter button.subcribe {
         height: 48px;
     }
+}
 
-    .contact-us-items,
-    .contact-us-items:first-child,
-    .newsletter .form-row .form-control {
-        width: 100%
+@media only screen and (max-width:425px) {
+    .newsletter .title {
+        font-size: 1.4em;
+    }
+
+    .newsletter form {
+        width: 80%;
+    }
+
+    .newsletter button.subcribe {
+        font-size: 13px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+    #button svg {
+        right: 1em;
+    }
+
+    .contact-custom-item .title {
+        font-size: 1.5em;
+    }
+
+    .contact-custom-item .decs {
+        width: 19em;
     }
 
     .contact-custom-item {
-        flex: auto
-    }
-}
-
-@media only screen and (max-width:767px) {
-    .top-header {
-        display: none
+        width: 18em;
+        height: 17em;
     }
 
-    .footer-items {
-        width: 100%
-    }
-}
-
-@media only screen and (max-width:575px) {
-    h1 {
-        font-size: 36px
+    .form-items input {
+        width: 15em;
     }
 
-    p {
-        font-size: 14px;
-        line-height: 28px
-    }
-
-    .spad {
-        padding: 40px 0
-    }
-
-    .main-footer {
-        padding: 20px 0
+    .form-items textarea {
+        width: 19em;
     }
 }
