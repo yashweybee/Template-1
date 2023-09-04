@@ -609,7 +609,21 @@
     </div>
     <!--Copy Right Sections-end-->
 
-    <script src="./js/index.js"></script>
+    <script>
+        document.querySelector(".navbar-toggler").addEventListener('click', handleToggleClick);
+        console.log(document.querySelector(".navbar-toggler"));
+
+        function handleToggleClick() {
+            console.log("click");
+            document.querySelector(".navbar").classList.toggle("show");
+        }
+
+        document.getElementById("dropDown-text").addEventListener("click", handleDropDown)
+
+        function handleDropDown() {
+            document.querySelector(".dropdown-menu").classList.toggle("hide-block");
+        }
+    </script>
 
 </body>
 

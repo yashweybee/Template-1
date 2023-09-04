@@ -86,9 +86,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.querySelector(".navbar-toggler").addEventListener('click', handleToggleClick);
+console.log(document.querySelector(".navbar-toggler"));
 
 function handleToggleClick() {
+    console.log("click");
     document.querySelector(".navbar").classList.toggle("show");
+}
+
+document.getElementById("dropDown-text").addEventListener("click", handleDropDown)
+
+function handleDropDown() {
+    document.querySelector(".dropdown-menu").classList.toggle("hide-block");
 }
 
 document.querySelector(".modal-body button").addEventListener("click", handleExitBtn)
@@ -100,10 +108,4 @@ document.querySelector(".share-btn").addEventListener("click", handleShareBtn)
 
 function handleShareBtn() {
     document.querySelector(".modal").classList.remove("hide-block");
-}
-
-document.getElementById("dropDown-text").addEventListener("click", handleDropDown)
-
-function handleDropDown() {
-    document.querySelector(".dropdown-menu").classList.toggle("hide-block");
 }
