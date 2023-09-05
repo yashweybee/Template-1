@@ -319,11 +319,11 @@
         <div class="container">
             <div class="vision-mission-inner">
                 <div class="vision-mission-items">
-                    <div class="about-vm-image">
+                    <div class="about-vm-image reveal fade-left">
                         <img src="./images/updates-img-1.jpg" loading="lazy" alt="{{AboutTitle2}}" width="100%"
                             height="100%">
                     </div>
-                    <div class="about-vm-content">
+                    <div class="about-vm-content reveal fade-right">
                         <h2 class="title">{{AboutTitle2}}</h2>
                         <!-- <p class="decs">{{AboutDescription2}}</p> -->
                         <p class="decs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id debitis
@@ -338,7 +338,7 @@
                     </div>
                 </div>
                 <div class="vision-mission-items">
-                    <div class="about-vm-content content-right">
+                    <div class="about-vm-content content-right reveal fade-left">
                         <h2 class="title">{{AboutTitle3}}</h2>
                         <!-- <p class="decs">{{AboutDescription3}}</p> -->
                         <p class="decs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempora sed
@@ -351,7 +351,7 @@
                             dolor fuga tenetur in quasi quia esse perferendis ipsam vel eveniet fugit dignissimos non.
                             Reprehenderit quos recusandae modi.</p>
                     </div>
-                    <div class="about-vm-image">
+                    <div class="about-vm-image reveal fade-right">
                         <img src="./images/updates-img-2.jpg" loading="lazy" alt="{{AboutTitle3}}" width="100%"
                             height="100%">
                     </div>
@@ -364,7 +364,7 @@
 
     <!--Our Team Section-->
     <div class="our_team spad">
-        <div class="container">
+        <div class="container reveal fade-bottom">
             <h3 class="title">{{TeamTitle}}</h3>
             <div class="team_inner">
 
@@ -397,7 +397,7 @@
 
     <!--Testimonial Section-->
     <div class="testimonial_section spad">
-        <div class="container">
+        <div class="container reveal fade-bottom">
             <h3 class="title">{{TestimonialTitle}}</h3>
             <div class="testi-item">
 
@@ -641,6 +641,25 @@
         function handleDropDown() {
             document.querySelector(".dropdown-menu").classList.toggle("hide-block");
         }
+
+        // animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
     </script>
 </body>
 
