@@ -77,7 +77,6 @@
     <!-- Back to Top End -->
 
     <!-- Top Header Here-->
-
     <div class="top-header">
         <div class="container">
             <div class="top-header-inside">
@@ -92,7 +91,8 @@
                                 <path d="m28 15h2a13.015 13.015 0 0 0 -13-13v2a11.013 11.013 0 0 1 11 11z" />
                             </svg>
                         </div>
-                        <a href="tel:{{MobileNumber}}" itemprop="telephone">{{MobileNumber}}</a>
+                        <a class="hover-underline-animation" href="tel:{{MobileNumber}}" itemprop="telephone">+91 123
+                            456 7890</a>
                     </div>
                     <div class="top-contact">
                         <div class="icon">
@@ -104,7 +104,7 @@
                                     d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z" />
                             </svg>
                         </div>
-                        <a href="mailto:{{Email}}" itemprop="email">{{Email}}</a>
+                        <a class="hover-underline-animation" href="mailto:{{Email}}" itemprop="email">info@weybee.in</a>
                     </div>
                 </div>
                 <div class="top-social social-media">
@@ -205,7 +205,7 @@
     <!-- Top Header Here End-->
 
     <!-- Main Header Here-->
-    <header class="main-header">
+    <header class="main-header" id="main-header">
         <div class="container">
             <div class="nav-inside">
                 <div class="nav-items">
@@ -262,30 +262,22 @@
                             <li class="nav-item hover-underline-animation"><a class="nav-link" href="gallery.html"
                                     itemscope="" itemtype="https://www.schema.org/SiteNavigationElement">Gallery</a>
                             </li>
-
-                            <!-- {{HeaderCustomLinks}} -->
-                            <!-- <li class="nav-item hover-underline-animation header-custom-page">
-                            <a class="nav-link" href="{{CustomPage}}.html" itemscope=""
-                                itemtype="https://www.schema.org/SiteNavigationElement">CustomPage</a>
-                        </li> -->
-
                             <li class="nav-item hover-underline-animation"><a class="nav-link" href="contact.html"
                                     itemscope="" itemtype="https://www.schema.org/SiteNavigationElement">Contact Us</a>
                             </li>
                         </ul>
-                    </div><!--navbar-collapse-->
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
-    <!-- Main Header Here End-->
     <!-- Main Header Here End-->
 
     <!-- Site Banner Section Here-->
     <div class="banner-area">
         <div class="container">
             <div class="banner-content">
-                <h1 class="title">{{UpdatePageTitle}}</h1>
+                <h1 class="title">Updates</h1>
             </div>
         </div>
     </div>
@@ -382,8 +374,9 @@
                     <div class="updates-content">
                         <div class="updates-date-share">
                             <a href="./updatedetails.html" class="title hover-underline-animation"
-                                itemprop="headline">{{UpdateTitle}}</a>
-                            <p class="decs" itemprop="description">{{UpdateDescription}}</p>
+                                itemprop="headline">Lorem Ipsum Dolor</a>
+                            <p class="decs" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit</p>
                             <button type="button" class="share-btn" aria-label="share" data-toggle="modal"
                                 data-target="#{{UpdateDetail}}Modal">
                                 <p>Share</p>
@@ -434,7 +427,10 @@
                     <div class="footer-logo">
                         <img src="./images/logo.png" width="100%" height="100%" alt="{{SiteTitle}}" itemprop="image">
                     </div>
-                    <p class="decs">{{TagLine}}</p>
+                    <p class="decs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                    </p>
                     <div class="footer-social">
                         <ul>
                             <li>
@@ -523,18 +519,18 @@
                     <h4 class="title">Quick Links</h4>
                     <div class="footer-links">
                         <ul class="navbar-nav">
-                            <li class="nav-item hover-underline-animation footer-user-link">
-                                <a class="nav-link" href="{{FooterTextLink}}">{{FooterText}}</a>
-                            </li>
-                            <li class="nav-item hover-underline-animation footer-user-link">
-                                <a class="nav-link" href="{{FooterTextLink}}">{{FooterText}}</a>
-                            </li>
-                            <li class="nav-item hover-underline-animation footer-user-link">
-                                <a class="nav-link" href="{{FooterTextLink}}">{{FooterText}}</a>
-                            </li>
-                            <li class="nav-item hover-underline-animation footer-user-link">
-                                <a class="nav-link" href="{{FooterTextLink}}">{{FooterText}}</a>
-                            </li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">Home</a></li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">About Us</a></li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">Products</a></li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">Update</a></li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">Gallery</a></li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -548,16 +544,12 @@
                                     <path
                                         d="m29.393 23.36c-.874-.733-6-3.979-6.852-3.83-.4.071-.706.412-1.525 1.389a11.687 11.687 0 0 1 -1.244 1.347 10.757 10.757 0 0 1 -2.374-.88 14.7 14.7 0 0 1 -6.784-6.786 10.757 10.757 0 0 1 -.88-2.374 11.687 11.687 0 0 1 1.347-1.244c.976-.819 1.318-1.123 1.389-1.525.149-.854-3.1-5.978-3.83-6.852-.306-.362-.584-.605-.94-.605-1.032 0-5.7 5.772-5.7 6.52 0 .061.1 6.07 7.689 13.791 7.721 7.589 13.73 7.689 13.791 7.689.748 0 6.52-4.668 6.52-5.7 0-.356-.243-.634-.607-.94z">
                                     </path>
-                                    <path d="m23 15h2a8.009 8.009 0 0 0 -8-8v2a6.006 6.006 0 0 1 6 6z">
-                                    </path>
-                                    <path d="m28 15h2a13.015 13.015 0 0 0 -13-13v2a11.013 11.013 0 0 1 11 11z">
-                                    </path>
+                                    <path d="m23 15h2a8.009 8.009 0 0 0 -8-8v2a6.006 6.006 0 0 1 6 6z"></path>
+                                    <path d="m28 15h2a13.015 13.015 0 0 0 -13-13v2a11.013 11.013 0 0 1 11 11z"></path>
                                 </svg>
                             </div>
                             <div class="contact-decs hover-underline-animation">
-                                <a href="tel:{{MobileNumber}}" itemprop="telephone">+91 123
-                                    456
-                                    7890</a>
+                                <a href="tel:{{MobileNumber}}" itemprop="telephone">+91 123 456 7890</a>
                             </div>
                         </div>
                         <div class="contact-items" itemscope="">
@@ -590,15 +582,9 @@
                                 </svg>
                             </div>
                             <div class="contact-decs" itemprop="address">
-                                <span itemprop="streetAddress">
-                                    302/303, Nakshatra Heights
-                                    150 Feet
-                                    Ring Road,</span>
-                                <span itemprop="streetAddress">
-                                    Opp Raiya Telephone
-                                    Exchange,</span>
-                                <span itemprop="postalCode">
-                                    Gujarat 360005, India</span>
+                                <span itemprop="streetAddress"> 302/303, Nakshatra Heights 150 Feet Ring Road,</span>
+                                <span itemprop="streetAddress"> Opp Raiya Telephone Exchange,</span>
+                                <span itemprop="postalCode"> Gujarat 360005, India</span>
                             </div>
                         </div>
                     </div>
@@ -612,8 +598,7 @@
             <div class="translate" id="google_translate_element"></div>
             <span class="copy-right-item">{{Copyright}}</span>
             <span class="copy-right-item">Powered by <a href="https://socialsparsh.com/" rel="noreferrer"
-                    target="_blank">Social
-                    Sparsh</a></span>
+                    target="_blank">Social Sparsh</a></span>
         </div>
     </div>
     <!--Copy Right Sections-end-->

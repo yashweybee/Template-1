@@ -77,7 +77,6 @@
     <!-- Back to Top End -->
 
     <!-- Top Header Here-->
-
     <div class="top-header">
         <div class="container">
             <div class="top-header-inside">
@@ -92,7 +91,8 @@
                                 <path d="m28 15h2a13.015 13.015 0 0 0 -13-13v2a11.013 11.013 0 0 1 11 11z" />
                             </svg>
                         </div>
-                        <a href="tel:{{MobileNumber}}" itemprop="telephone">{{MobileNumber}}</a>
+                        <a class="hover-underline-animation" href="tel:{{MobileNumber}}"
+                            itemprop="telephone">{{MobileNumber}}</a>
                     </div>
                     <div class="top-contact">
                         <div class="icon">
@@ -104,7 +104,7 @@
                                     d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z" />
                             </svg>
                         </div>
-                        <a href="mailto:{{Email}}" itemprop="email">{{Email}}</a>
+                        <a class="hover-underline-animation" href="mailto:{{Email}}" itemprop="email">info@weybee.in</a>
                     </div>
                 </div>
                 <div class="top-social social-media">
@@ -205,7 +205,7 @@
     <!-- Top Header Here End-->
 
     <!-- Main Header Here-->
-    <header class="main-header">
+    <header class="main-header" id="main-header">
         <div class="container">
             <div class="nav-inside">
                 <div class="nav-items">
@@ -262,30 +262,22 @@
                             <li class="nav-item hover-underline-animation"><a class="nav-link" href="gallery.html"
                                     itemscope="" itemtype="https://www.schema.org/SiteNavigationElement">Gallery</a>
                             </li>
-
-                            <!-- {{HeaderCustomLinks}} -->
-                            <!-- <li class="nav-item hover-underline-animation header-custom-page">
-                            <a class="nav-link" href="{{CustomPage}}.html" itemscope=""
-                                itemtype="https://www.schema.org/SiteNavigationElement">CustomPage</a>
-                        </li> -->
-
                             <li class="nav-item hover-underline-animation"><a class="nav-link" href="contact.html"
                                     itemscope="" itemtype="https://www.schema.org/SiteNavigationElement">Contact Us</a>
                             </li>
                         </ul>
-                    </div><!--navbar-collapse-->
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
-    <!-- Main Header Here End-->
     <!-- Main Header Here End-->
 
     <!-- Site Banner Section Here-->
     <div class="banner-area">
         <div class="container">
             <div class="banner-content">
-                <div class="title">{{ContactPageTitle}}</div>
+                <div class="title">Contact us</div>
             </div>
         </div>
     </div>
@@ -296,7 +288,7 @@
         <div class="container">
             <div class="contact-custom-inside">
                 <div class="contact-custom-item">
-                    <h1 class="title">{{ContactCustomTitle}}</h1>
+                    <h1 class="title">Book a Demo</h1>
                     <div>
                         <!-- <p class="decs">{{ContactCustomDescription}}</p> -->
                         <p class="decs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, voluptate
@@ -336,8 +328,9 @@
                         </div>
                         <div class="contact-text">
                             <div itemprop="address">
-                                <a itemprop="brand">{{SiteTitle}}</a>
-                                <p itemprop="streetAddress"> {{ContactAddress}}</p>
+                                <a itemprop="brand">Lorem Ipsum Dolor</a>
+                                <p itemprop="streetAddress"> 302/303, Nakshatra Heights 150 Feet Ring Road,Opp Raiya
+                                    Telephone Exchange,</p>
                             </div>
                         </div>
                     </div>
@@ -353,8 +346,8 @@
                             </svg>
                         </div>
                         <div class="contact-text">
-                            <a href="tel:{{MobileNumber}}" itemprop="telephone"
-                                class="hover-underline-animation">{{MobileNumber}}</a>
+                            <a href="tel:{{MobileNumber}}" itemprop="telephone" class="hover-underline-animation">+91
+                                123 456 7890</a>
                         </div>
                     </div>
                     <div class="contact-ditails reveal fade-right">
@@ -370,7 +363,8 @@
                             </svg>
                         </div>
                         <div class="contact-text">
-                            <a class="hover-underline-animation" href="mailto:{{Email}}" itemprop="email">{{Email}}</a>
+                            <a class="hover-underline-animation" href="mailto:{{Email}}"
+                                itemprop="email">your@mail.com</a>
                         </div>
                     </div>
                 </div>
@@ -519,7 +513,10 @@
                     <div class="footer-logo">
                         <img src="./images/logo.png" width="100%" height="100%" alt="{{SiteTitle}}" itemprop="image">
                     </div>
-                    <p class="decs">{{TagLine}}</p>
+                    <p class="decs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                    </p>
                     <div class="footer-social">
                         <ul>
                             <li>
@@ -609,13 +606,17 @@
                     <div class="footer-links">
                         <ul class="navbar-nav">
                             <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
-                                    href="{{FooterTextLink}}">{{FooterText}}</a></li>
+                                    href="{{FooterTextLink}}">Home</a></li>
                             <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
-                                    href="{{FooterTextLink}}">{{FooterText}}</a></li>
+                                    href="{{FooterTextLink}}">About Us</a></li>
                             <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
-                                    href="{{FooterTextLink}}">{{FooterText}}</a></li>
+                                    href="{{FooterTextLink}}">Products</a></li>
                             <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
-                                    href="{{FooterTextLink}}">{{FooterText}}</a></li>
+                                    href="{{FooterTextLink}}">Update</a></li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">Gallery</a></li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

@@ -268,13 +268,13 @@
 
  .buttons button#next {
      position: absolute;
-     top: 40%;
+     top: 50%;
      right: 15px;
  }
 
  .buttons button#prev {
      position: absolute;
-     top: 40%;
+     top: 50%;
      left: 15px;
  }
 

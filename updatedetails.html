@@ -92,7 +92,8 @@
                                 <path d="m28 15h2a13.015 13.015 0 0 0 -13-13v2a11.013 11.013 0 0 1 11 11z" />
                             </svg>
                         </div>
-                        <a href="tel:{{MobileNumber}}" itemprop="telephone">{{MobileNumber}}</a>
+                        <a class="hover-underline-animation" href="tel:{{MobileNumber}}" itemprop="telephone">+91 123
+                            456 7890</a>
                     </div>
                     <div class="top-contact">
                         <div class="icon">
@@ -104,7 +105,7 @@
                                     d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z" />
                             </svg>
                         </div>
-                        <a href="mailto:{{Email}}" itemprop="email">{{Email}}</a>
+                        <a class="hover-underline-animation" href="mailto:{{Email}}" itemprop="email">info@weybee.in</a>
                     </div>
                 </div>
                 <div class="top-social social-media">
@@ -205,7 +206,7 @@
     <!-- Top Header Here End-->
 
     <!-- Main Header Here-->
-    <header class="main-header">
+    <header class="main-header" id="main-header">
         <div class="container">
             <div class="nav-inside">
                 <div class="nav-items">
@@ -262,30 +263,22 @@
                             <li class="nav-item hover-underline-animation"><a class="nav-link" href="gallery.html"
                                     itemscope="" itemtype="https://www.schema.org/SiteNavigationElement">Gallery</a>
                             </li>
-
-                            <!-- {{HeaderCustomLinks}} -->
-                            <!-- <li class="nav-item hover-underline-animation header-custom-page">
-                            <a class="nav-link" href="{{CustomPage}}.html" itemscope=""
-                                itemtype="https://www.schema.org/SiteNavigationElement">CustomPage</a>
-                        </li> -->
-
                             <li class="nav-item hover-underline-animation"><a class="nav-link" href="contact.html"
                                     itemscope="" itemtype="https://www.schema.org/SiteNavigationElement">Contact Us</a>
                             </li>
                         </ul>
-                    </div><!--navbar-collapse-->
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
-    <!-- Main Header Here End-->
     <!-- Main Header Here End-->
 
     <!-- Site Banner Section Here-->
     <div class="banner-area">
         <div class="container">
             <div class="banner-content">
-                <h1 class="title">{{UpdateTitle}}</h1>
+                <h1 class="title">Update Title</h1>
             </div>
         </div>
     </div>
@@ -302,8 +295,19 @@
                             itemprop="image">
                     </div>
                     <div class="update-detials-content" itemprop="description">
-                        <h2 class="title hover-underline-animation">{{UpdateTitle}}</h2>
-                        <p>{{UpdateDescription}}</p>
+                        <h2 class="title hover-underline-animation">Great consultants are confident about their skills
+                            and expertise</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
                 <div class="tag-share">
@@ -312,16 +316,16 @@
                         <div class="tags-itmes">
                             <ul>
                                 <li>
-                                    <a href="{{UpdateKeywordPage}}.html">{{UpdateKeyword}}</a>
+                                    <a href="{{UpdateKeywordPage}}.html">Lorem, ipsum</a>
                                 </li>
                                 <li>
-                                    <a href="{{UpdateKeywordPage}}.html">{{UpdateKeyword}}</a>
+                                    <a href="{{UpdateKeywordPage}}.html">Lorem, ipsum</a>
                                 </li>
                                 <li>
-                                    <a href="{{UpdateKeywordPage}}.html">{{UpdateKeyword}}</a>
+                                    <a href="{{UpdateKeywordPage}}.html">Lorem, ipsum</a>
                                 </li>
                                 <li>
-                                    <a href="{{UpdateKeywordPage}}.html">{{UpdateKeyword}}</a>
+                                    <a href="{{UpdateKeywordPage}}.html">Lorem, ipsum</a>
                                 </li>
                             </ul>
                         </div>
@@ -419,7 +423,10 @@
                     <div class="footer-logo">
                         <img src="./images/logo.png" width="100%" height="100%" alt="{{SiteTitle}}" itemprop="image">
                     </div>
-                    <p class="decs">{{TagLine}}</p>
+                    <p class="decs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                    </p>
                     <div class="footer-social">
                         <ul>
                             <li>
@@ -509,13 +516,17 @@
                     <div class="footer-links">
                         <ul class="navbar-nav">
                             <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
-                                    href="{{FooterTextLink}}">{{FooterText}}</a></li>
+                                    href="{{FooterTextLink}}">Home</a></li>
                             <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
-                                    href="{{FooterTextLink}}">{{FooterText}}</a></li>
+                                    href="{{FooterTextLink}}">About Us</a></li>
                             <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
-                                    href="{{FooterTextLink}}">{{FooterText}}</a></li>
+                                    href="{{FooterTextLink}}">Products</a></li>
                             <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
-                                    href="{{FooterTextLink}}">{{FooterText}}</a></li>
+                                    href="{{FooterTextLink}}">Update</a></li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">Gallery</a></li>
+                            <li class="nav-item hover-underline-animation footer-user-link"><a class="nav-link"
+                                    href="{{FooterTextLink}}">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
