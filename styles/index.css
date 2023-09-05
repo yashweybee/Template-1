@@ -539,6 +539,7 @@
  }
 
  .social-media ul {
+     padding-left: 0;
      display: flex;
      justify-content: center;
      gap: 2em;
@@ -971,6 +972,10 @@
          font-size: 1.5em;
      }
 
+     .modal-body {
+         width: 37%;
+     }
+
      .newsletter .title {
          font-size: 1.9em;
      }
@@ -1147,7 +1152,7 @@
      }
 
      .modal-body {
-         width: 75%;
+         width: 80%;
          height: 12em;
      }
 
@@ -1280,6 +1285,14 @@
      .about-us-img img {
          width: 20em;
          height: 20em;
+     }
+
+     .modal-body {
+         width: 88%;
+     }
+
+     .social-media ul {
+         gap: 1em;
      }
 
      .logo-slider .title {
