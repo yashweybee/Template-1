@@ -40,7 +40,7 @@
 
  /* -------------------back-to-top----------------------------------- */
 
- /* progress */
+ /*-----------------------progress--------------------------- */
  .header {
      position: fixed;
      top: 0;
@@ -61,7 +61,68 @@
      width: 0%;
  }
 
- /* progress */
+ /*----------------------------//progress//------------------------*/
+
+ /* ---------------------animation---------------------------- */
+ .reveal {
+     position: relative;
+     opacity: 0;
+ }
+
+ .reveal.active {
+     opacity: 1;
+ }
+
+ .active.fade-bottom {
+     animation: fade-bottom 1s ease-in;
+ }
+
+ .active.fade-left {
+     animation: fade-left .7s ease-in;
+ }
+
+ .active.fade-right {
+     animation: fade-right 1s ease-in;
+ }
+
+ @keyframes fade-bottom {
+     0% {
+         transform: translateY(50px);
+         opacity: 0;
+     }
+
+     100% {
+         transform: translateY(0);
+         opacity: 1;
+     }
+ }
+
+ @keyframes fade-left {
+     0% {
+         transform: translateX(-100px);
+         opacity: 0;
+     }
+
+     100% {
+         transform: translateX(0);
+         opacity: 1;
+     }
+ }
+
+ @keyframes fade-right {
+     0% {
+         transform: translateX(100px);
+         opacity: 0;
+     }
+
+     100% {
+         transform: translateX(0);
+         opacity: 1;
+     }
+ }
+
+
+ /* ---------------------//animation//---------------------------- */
 
 
  /* ------------------------------navbar--------------------------------- */
@@ -665,7 +726,6 @@
  }
 
  .updates-content .share-btn:hover {
-     /* border: 1px solid var(--white); */
      background-color: var(--primary-color);
      color: var(--white);
  }
@@ -676,6 +736,11 @@
      padding: 0.3em 0.9em;
      border-radius: 0.6em;
      transition: .5s;
+ }
+
+ .updates .btn:hover {
+     background-color: var(--primary-color);
+     color: var(--white);
  }
 
  /* --------------------------//updates//-------------------------------- */
