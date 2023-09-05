@@ -9,6 +9,10 @@
      --second-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
 
+ html {
+     scroll-behavior: smooth;
+ }
+
  body {
      font-family: var(--primary-font);
      padding: 0;
@@ -553,7 +557,7 @@
      padding-left: 0;
      display: flex;
      justify-content: center;
-     gap: 2em;
+     gap: 1em;
      margin: 0;
 
  }
@@ -581,7 +585,7 @@
 
  /* -------------------------News Letter----------------------------------*/
  .newsletter {
-     margin: 4em 0;
+     margin-top: 4em;
      padding: 2em;
      background-color: var(--primary-color);
      text-align: center;
@@ -968,7 +972,6 @@
 
      .counter .title {
          font-size: xx-large;
-         text-decoration: underline;
      }
 
      .counter-inside {
