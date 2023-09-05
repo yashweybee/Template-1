@@ -1245,12 +1245,23 @@
          bottom: 1em;
      }
 
-     .slider {
-         display: none;
+     .slide .content {
+         left: -560px;
+     }
+
+
+
+     .buttons button#next,
+     .buttons button#prev {
+         top: 40%;
      }
 
      .about-us-inside {
          margin: auto;
+     }
+
+     .about-us-content {
+         margin-top: 5em;
      }
 
      .count-up .counter-count {
@@ -1301,12 +1312,38 @@
          font-size: 13px;
          width: 100px;
      }
+
+     .slider {
+         height: 50vh;
+     }
+
+     .slide.current .content {
+         transform: translateX(600px);
+     }
+
+     .slide .content {
+         width: 18em;
+         bottom: 121px;
+     }
+
+     .buttons button#next,
+     .buttons button#prev {
+         top: 53%;
+     }
  }
 
  @media only screen and (max-width:375px) {
      .navbar {
          width: 103%;
          height: 53em;
+     }
+
+     .slide .content {
+         width: 16em;
+     }
+
+     .slide .content {
+         left: -573px;
      }
 
      .about-us-img img {
@@ -1332,6 +1369,13 @@
  }
 
  @media only screen and (max-width:320px) {
+     .slide .content {
+         width: 15em;
+     }
+
+     .slide .content {
+         left: -595px;
+     }
 
      /* footer */
      .footer-inside {
