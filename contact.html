@@ -321,7 +321,7 @@
         <div class="container">
             <div class="contact-us-inside">
                 <div class="contact-us-items">
-                    <div class="contact-ditails">
+                    <div class="contact-ditails reveal fade-left">
                         <div class="contact-ditails-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512"
                                 viewBox="0 0 512 512">
@@ -341,7 +341,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-ditails">
+                    <div class="contact-ditails reveal fade-bottom">
                         <div class="contact-ditails-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_3" viewBox="0 0 32 32"
                                 data-name="Layer 3">
@@ -357,7 +357,7 @@
                                 class="hover-underline-animation">{{MobileNumber}}</a>
                         </div>
                     </div>
-                    <div class="contact-ditails">
+                    <div class="contact-ditails reveal fade-right">
                         <div class="contact-ditails-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512"
                                 viewBox="0 0 512 512">
@@ -374,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-social">
+                <div class="contact-social reveal fade-bottom">
                     <ul>
                         <li>
                             <a href="{{Facebook}}" itemprop="facebook" aria-label="facebook" rel="noreferrer"
@@ -450,7 +450,7 @@
                     </ul>
                 </div>
 
-                <div class="contact-us-items">
+                <div class="contact-us-items reveal fade-bottom">
                     <div class="contact-form">
                         <h2 class="title">Send us a Message </h2>
                         <form method="post" id="contactus-form">
@@ -742,6 +742,25 @@
         function handleDropDown() {
             document.querySelector(".dropdown-menu").classList.toggle("hide-block");
         }
+
+        // animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
     </script>
 </body>
 
