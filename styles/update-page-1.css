@@ -155,7 +155,7 @@ ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 25px 0
+    margin: 25px 0;
 }
 
 .updates-items {
@@ -176,6 +176,10 @@ ul {
 .updates-items:hover {
     transform: scale(1.1);
     box-shadow: 0 0 32px #ffffff;
+}
+
+.updates-content {
+    margin: 0;
 }
 
 .updates-content .title {
