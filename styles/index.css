@@ -126,6 +126,7 @@
 
 
  /* ------------------------------navbar--------------------------------- */
+
  .top-header {
      margin-top: 0.5em;
      padding-top: 0.5em;
@@ -161,6 +162,7 @@
      display: flex;
      align-items: center;
      justify-content: space-evenly;
+     transition: 1s;
  }
 
  .navbar-nav {
@@ -497,6 +499,15 @@
 
 
  /* ----------------share this on section------------------------- */
+ .modal {
+     z-index: 999;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     height: 100%;
+     width: 100%;
+ }
 
  .modal-body {
      position: fixed;
@@ -1055,6 +1066,18 @@
          width: 100%;
          text-align: center;
          height: 50em;
+         animation-name: nav-animation;
+         animation-duration: .5s;
+     }
+
+     @keyframes nav-animation {
+         from {
+             opacity: 0
+         }
+
+         to {
+             opacity: 1
+         }
      }
 
      .navbar-nav {
