@@ -858,7 +858,7 @@
 
  .footer-items .decs {
      margin: 1rem 0;
-     /* color: var(--white) */
+     width: 75%;
  }
 
  .footer-social ul {
@@ -895,6 +895,7 @@
 
 
  .footer-links .navbar-nav .nav-item {
+     width: fit-content;
      position: relative;
      padding: 8px 0
  }
