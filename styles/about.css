@@ -288,6 +288,12 @@ ul {
     display: none;
 }
 
+.my-3 {
+    width: 10em;
+    margin: 1em auto;
+}
+
+
 
 /*----------------------//Testimonial Section//-------------------------- */
 
