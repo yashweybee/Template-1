@@ -585,7 +585,7 @@
 
  /* -------------------------News Letter----------------------------------*/
  .newsletter {
-     margin-top: 4em;
+     margin: 4em 0;
      padding: 2em;
      background-color: var(--primary-color);
      text-align: center;
