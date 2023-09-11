@@ -782,6 +782,11 @@
      animation-delay: 1s;
  }
 
+
+ .logo-slider-items {
+     text-align: center;
+ }
+
  @keyframes travel {
 
      0%,
