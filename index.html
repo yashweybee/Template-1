@@ -281,66 +281,37 @@
     <!-- Main Header Here End-->
 
     <!-- Main Slider Here-->
-    <div class="slider">
-        <div class="slide current">
-            <div class="content">
-                <h1>Slide One</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
+    <div class="main-slider">
+        <div class="slider-items single-item home-slide-item carousel-container">
+            <div class="carousel-item mySlides" itemprop="image">
+                <img class="animate" src="./images/service-img-1.jpg" alt="slider-img-1">
+                <div class="container slider-content text">
+                    <div class="title" itemprop="name">lorem1</div>
+                    <p class="decs" itemprop="description">Lrem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Cupiditate, laborum. ipsdolor sit ameto.</p>
+                </div>
             </div>
-        </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Two</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
+            <div class="carousel-item mySlides" itemprop="image">
+                <img class="animate" src="images/service-img-2.jpg" alt="slider-img-2">
+                <div class="container slider-content text">
+                    <div class="title" itemprop="name">lorem2</div>
+                    <p class="decs" itemprop="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Cupiditate, laborum. Lorem ipsum d olor sit amet.</p>
+                </div>
             </div>
-        </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Three</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
+            <div class="carousel-item mySlides" itemprop="image">
+                <img class="animate" src="./images/service-img-3.jpg" alt="slider-img-3">
+                <div class="container slider-content text">
+                    <div class="title" itemprop="name">lorem3</div>
+                    <p class="decs" itemprop="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Cupiditate, laborum. Lorem ipsum dolor sit amet.</p>
+                </div>
             </div>
-        </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Four</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Five</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="content">
-                <h1>Slide Six</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
-            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
     </div>
-    <div class="buttons">
-        <button id="prev">&laquo;</button>
-        <button id="next"> &raquo;</button>
-    </div>
+
 
     <!-- Main Slider Here -->
 
@@ -379,19 +350,19 @@
             <h2 class="title">SUCCESS IN NUMBERS</h2>
             <div class="counter-inside reveal fade-bottom">
                 <div class="count-up">
-                    <div id="count1" class="counter-count"></div>
+                    <div id="count1" class="counter-count">1000+</div>
                     <div class="counter-text">Lorem, ipsum.</div>
                 </div>
                 <div class="count-up">
-                    <div id="count2" class="counter-count"></div>
+                    <div id="count2" class="counter-count">56+</div>
                     <div class="counter-text">Lorem, ipsum.</div>
                 </div>
                 <div class="count-up">
-                    <div id="count3" class="counter-count"></div>
+                    <div id="count3" class="counter-count">99+</div>
                     <div class="counter-text">Lorem, ipsum.</div>
                 </div>
                 <div class="count-up">
-                    <div id="count4" class="counter-count"></div>
+                    <div id="count4" class="counter-count">26+</div>
                     <div class="counter-text">Lorem, ipsum.</div>
                 </div>
             </div>
@@ -915,8 +886,121 @@
 
 
 
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
-    <script src="./js/index.js"></script>
+        // Next-previous control
+        function nextSlide() {
+            slideIndex++;
+            showSlides();
+            timer = _timer; // reset timer
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            showSlides();
+            timer = _timer;
+        }
+
+        // Thumbnail image controlls
+        function currentSlide(n) {
+            slideIndex = n - 1;
+            showSlides();
+            timer = _timer;
+        }
+
+        function showSlides() {
+            let slides = document.querySelectorAll(".mySlides");
+            let dots = document.querySelectorAll(".dots");
+
+            if (slideIndex > slides.length - 1) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = slides.length - 1;
+
+            // hide all slides
+            slides.forEach((slide) => {
+                slide.style.display = "none";
+            });
+
+            // show one slide base on index number
+            slides[slideIndex].style.display = "block";
+        }
+
+        // autoplay slides --------
+        let timer = 5; // sec
+        const _timer = timer;
+
+        // this function runs every 1 second
+        setInterval(() => {
+            timer--;
+
+            if (timer < 1) {
+                nextSlide();
+                timer = _timer; // reset timer
+            }
+        }, 1000); // 1sec
+
+
+
+
+
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+
+        document.querySelector(".navbar-toggler").addEventListener('click', handleToggleClick);
+        function handleToggleClick() {
+            console.log("click");
+            document.querySelector(".navbar").classList.toggle("show");
+        }
+
+        document.getElementById("dropDown-text").addEventListener("click", handleDropDown)
+
+        function handleDropDown() {
+            document.querySelector(".dropdown-menu").classList.toggle("hide-block");
+        }
+
+        document.querySelector(".modal-body button").addEventListener("click", handleExitBtn)
+        function handleExitBtn() {
+            document.querySelector(".modal").classList.add("hide-block");
+        }
+
+        const shareBtns = document.querySelectorAll(".share-btn")
+        shareBtns.forEach(btn => {
+            btn.addEventListener("click", handleShareBtn)
+        })
+
+        function handleShareBtn() {
+            document.querySelector(".modal").classList.remove("hide-block");
+        }
+
+
+        // animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+    <!-- <script src="./js/index.js"></script> -->
 </body>
 
 </html>
