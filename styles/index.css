@@ -337,7 +337,7 @@
  }
 
  .about-us-content .title h1 {
-     font-size: 4em;
+     font-size: 3em;
      color: var(--primary-color);
      display: inline;
      margin: 2em 0;
@@ -452,7 +452,8 @@
      color: var(--dark);
  }
 
- .services-btn .share-btn img {
+ .services-btn .share-btn svg {
+     height: auto;
      width: 1.3em;
  }
 
@@ -758,28 +759,26 @@
      margin: 1em 4em;
  }
 
- .row {
+ /* .row {
      display: flex;
      overflow: hidden;
- }
+ } */
 
  .imagegroup {
      display: flex;
+     justify-content: space-between;
+     gap: 10px;
      width: 100%;
+     overflow: auto;
  }
 
  .imagegroup img {
      border-radius: 1em;
-     width: 38em;
+     width: 25em;
      height: 20em;
      flex-shrink: 0;
      object-fit: cover;
      border: 3px solid white;
- }
-
- .imagegroup {
-     animation: travel 20s ease-in-out infinite;
-     animation-delay: 1s;
  }
 
 
@@ -1350,7 +1349,7 @@
      }
 
      .container-fluid {
-         margin: auto;
+        margin: 1em;
      }
  }
 

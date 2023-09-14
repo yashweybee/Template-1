@@ -210,7 +210,8 @@ ul {
     color: var(--dark);
 }
 
-.share-btn img {
+.share-btn svg {
+    height: auto;
     width: 1em;
 }
 
