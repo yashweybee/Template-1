@@ -197,8 +197,12 @@
      object-fit: cover;
  }
 
+ .dropbtn{
+    display: block;
+}
  .dropdown-menu {
      /* display: none; */
+     width: max-content;
      position: absolute;
      min-width: 160px;
      background-color: var(--white);
@@ -510,8 +514,10 @@
  }
 
  .modal-body .title {
-     font-size: 1.5em;
-     margin: 1em;
+    font-size: 1.5em !important;
+    color: var(--black) !important;
+    margin: 1em;
+    font-weight: 600 !important;
  }
 
  .modal-body button {
@@ -652,7 +658,7 @@
  }
 
  .updates .updates-main .updates-items {
-     margin-left: 10em;
+     margin-left: 25em; /*file specific*/
      clear: both;
      background-color: var(--white);
      height: 100%;
