@@ -190,7 +190,11 @@
  }
 
  .nav-items {
-     width: 10%
+     /* width: 10% */
+ }
+
+ .brand-logo {
+     width: 7em;
  }
 
  .nav-items img {
@@ -1349,7 +1353,7 @@
      }
 
      .container-fluid {
-        margin: 1em;
+         margin: 1em;
      }
  }
 
