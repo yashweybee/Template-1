@@ -1017,6 +1017,7 @@
         </div>
     </footer>
     <!--Footer sections-end-->
+
     <div class="copy-right">
         <div class="container">
             <div class="translate" id="google_translate_element"></div>
@@ -1027,7 +1028,20 @@
     </div>
     <!--Copy Right Sections-end-->
 
-
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: "en",
+                    includedLanguages: "en,es,hi,ja,zh-CN",
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                },
+                "google_translate_element"
+            );
+        }
+    </script>
 
     <script>
         let slideIndex = 0;
@@ -1141,8 +1155,6 @@
         function handleUpdateShareBtn() {
             document.querySelector(".modal-updates").classList.remove("hide-block");
         }
-
-
 
 
         // animation

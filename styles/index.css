@@ -189,10 +189,6 @@
      display: none;
  }
 
- .nav-items {
-     /* width: 10% */
- }
-
  .brand-logo {
      width: 7em;
  }
@@ -651,12 +647,8 @@
 
  /* --------------------------updates------------------------------------ */
 
- .updates {
-     /* margin: 7em 0; */
- }
-
  .updates .container {
-     text-align: center;
+     text-align: -webkit-center;
  }
 
  .updates .updates-main .updates-items {
@@ -733,6 +725,8 @@
  }
 
  .updates .btn {
+     display: block;
+     width: max-content;
      font-size: 2em;
      border: 1px solid var(--primary-color);
      padding: 0.3em 0.9em;
@@ -910,6 +904,7 @@
  }
 
  .copy-right {
+    text-align: center;
      position: relative;
      padding: 10px 15px;
      background-color: var(--primary-color)
