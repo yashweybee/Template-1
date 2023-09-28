@@ -165,7 +165,7 @@
      height: 4em;
      display: flex;
      align-items: center;
-     justify-content: space-evenly;
+     justify-content: space-around;
      transition: 1s;
  }
 
@@ -197,9 +197,10 @@
      object-fit: cover;
  }
 
- .dropbtn{
-    display: block;
-}
+ .dropbtn {
+     display: block;
+ }
+
  .dropdown-menu {
      /* display: none; */
      width: max-content;
@@ -230,7 +231,7 @@
      overflow: hidden;
      position: relative;
      z-index: 0;
-     height: 500px;
+     height: 95vh;
  }
 
  /* Hide the images by default */
@@ -239,9 +240,8 @@
  }
 
  .mySlides img {
-     height: 600px;
+     height: 85vh;
      width: 100%;
-     -o-object-fit: cover;
      object-fit: cover;
      vertical-align: middle;
  }
@@ -308,14 +308,15 @@
  }
 
  @keyframes animate {
-     from {
+     /* from {
          transform: scale(1.1) rotateY(10deg);
      }
 
      to {
          transform: scale(1) rotateY(0deg);
-     }
+     } */
  }
+
 
  /* ------------------------//slider//----------------------------------------------------- */
 
@@ -325,19 +326,21 @@
      display: flex;
      align-items: center;
      margin: 6em 0;
+     justify-content: center;
  }
 
  .about-us-img img {
-     width: 35em;
+     width: 30em;
      height: 25em;
      object-fit: cover;
      border-radius: 1em;
-     margin-right: 15em;
+     margin-right: 10em;
  }
 
  .about-us-content {
      text-align: center;
      padding: 0 5em;
+     width: 40em;
  }
 
  .about-us-content .title h1 {
@@ -370,7 +373,9 @@
  .counter-inside {
      text-align: center;
      display: flex;
-     justify-content: space-evenly;
+     flex-wrap: wrap;
+     gap: 3em;
+     justify-content: center;
      padding-bottom: 6em;
  }
 
@@ -410,13 +415,14 @@
 
  .our-serivces-main {
      display: flex;
-     justify-content: space-evenly;
+     justify-content: center;
      flex-wrap: wrap;
      margin: 25px 0
  }
 
  .our-serivces-items {
-     width: 22%;
+     width: 20%;
+     margin: 3em 2.5em;
      background-color: var(--white);
      padding: 17px;
      /* border: 1px solid black; */
@@ -514,10 +520,10 @@
  }
 
  .modal-body .title {
-    font-size: 1.5em !important;
-    color: var(--black) !important;
-    margin: 1em;
-    font-weight: 600 !important;
+     font-size: 1.5em !important;
+     color: var(--black) !important;
+     margin: 1em;
+     font-weight: 600 !important;
  }
 
  .modal-body button {
@@ -626,20 +632,19 @@
      font-size: 18px;
      cursor: pointer;
      transition: .5s;
-     background-color: var(--white);
-     color: var(--primary-color);
+     border: 1px solid var(--white);
+     background-color: var(--primary-color);
+     color: var(--white);
      margin-left: 8px;
-     border: none;
      outline: 0;
      width: 200px;
-     height: 56px;
+     height: 58px;
      border-radius: .5em;
  }
 
  .newsletter button.subcribe:hover {
-     border: 1px solid var(--white);
-     background-color: var(--primary-color);
-     color: var(--white)
+     background-color: var(--white);
+     color: var(--primary-color);
  }
 
  #NewsLetterFormResponse {
@@ -657,20 +662,27 @@
      text-align: -webkit-center;
  }
 
- .updates .updates-main .updates-items {
-     margin-left: 25em; /*file specific*/
+
+ .updates-main {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0.2em;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .updates-items {
+     width: 25%;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
      clear: both;
      background-color: var(--white);
      height: 100%;
-     display: flex;
  }
 
- .updates .updates-main .right-float {
-     clear: left;
-     float: right;
-     margin-right: 10em;
-
- }
 
  .updates-content {
      display: flex;
@@ -678,7 +690,7 @@
      position: relative;
      padding: 15px;
      background-color: var(--bgcolor);
-     margin: 5em;
+     margin: 0em 2em;
  }
 
  .updates-date-share {
@@ -697,7 +709,7 @@
  }
 
  .updates-content .title {
-     font-size: 3em;
+     font-size: 2em;
      font-weight: 500;
      color: var(--primary-color);
  }
@@ -731,6 +743,7 @@
  }
 
  .updates .btn {
+     margin-top: 2em;
      display: block;
      width: max-content;
      font-size: 2em;
@@ -773,7 +786,7 @@
      justify-content: space-between;
      gap: 10px;
      width: 100%;
-     overflow: auto;
+     /* overflow: auto; */
  }
 
  .imagegroup img {
@@ -817,7 +830,7 @@
  }
 
  .footer-items {
-     width: 30%
+     width: 24%
  }
 
  .footer-social ul {
@@ -910,7 +923,7 @@
  }
 
  .copy-right {
-    text-align: center;
+     text-align: center;
      position: relative;
      padding: 10px 15px;
      background-color: var(--primary-color)
@@ -1252,6 +1265,7 @@
 
      .about-us-content {
          margin-top: 5em;
+         width: 20em;
      }
 
      .count-up .counter-count {
