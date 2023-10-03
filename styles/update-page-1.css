@@ -153,14 +153,15 @@ ul {
 
 .updates-main {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 7em;
     flex-wrap: wrap;
     margin: 25px 0;
 }
 
 .updates-items {
     margin-bottom: 2em;
-    width: 22%;
+    width: 20%;
     background-color: var(--white);
     padding: 17px;
     /* border: 1px solid black; */
@@ -174,7 +175,7 @@ ul {
 }
 
 .updates-items:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
     box-shadow: 0 0 32px #ffffff;
 }
 

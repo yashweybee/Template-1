@@ -145,7 +145,7 @@ ul {
 }
 
 .products-details-image {
-    width: 35em;
+    width: 30em;
     height: 25em;
 }
 
@@ -155,12 +155,12 @@ ul {
 }
 
 .products-details-content {
-    /* background-color: teal; */
+    width: 45em;
     text-align: left;
 }
 
 .products-details-content .title {
-    font-size: 4em;
+    font-size: 3em;
     color: var(--primary-color);
     display: inline;
     margin: 2em 0;

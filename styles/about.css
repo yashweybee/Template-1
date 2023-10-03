@@ -59,7 +59,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7em;
+    gap: 5em;
     margin: 6em 0;
 }
 
@@ -97,12 +97,12 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 17em;
+    gap: 16em;
     margin: 7em 0;
 }
 
 .about-vm-image {
-    width: 35em;
+    width: 30em;
     height: 25em;
     object-fit: cover;
 }
@@ -120,7 +120,7 @@ ul {
 }
 
 .about-vm-content .title {
-    font-size: 4em;
+    font-size: 3em;
     color: var(--primary-color);
     display: inline;
     margin: 2em 0;
@@ -225,13 +225,14 @@ ul {
 
 .team_inner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 5em;
 }
 
 .team-member {
-    margin-bottom: 2em;
+    margin: 2em;
     width: 13%;
     background-color: var(--white);
     padding: 17px;
@@ -246,7 +247,7 @@ ul {
 }
 
 .team-member:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
     box-shadow: 0 0 32px #ffffff;
 }
 
@@ -259,6 +260,7 @@ ul {
 
 /* -----------------------//Our Team Section//-------------------------- */
 /* -----------------------Testimonial Section-------------------------- */
+
 .testimonial_section {
     text-align: center;
 }

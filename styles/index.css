@@ -273,13 +273,14 @@
 
  /* Caption text */
  .text {
-     color: var(--black);
-     background-color: rgb(160 160 160 / 60%);
+     width: 100%;
+     color: var(--white);
+     background-color: rgb(0 0 0 / 50%);
      border-radius: 10px;
-     font-size: 20px;
+     font-size: 25px;
      padding: 8px 12px;
      position: absolute;
-     bottom: 50%;
+     bottom: 17%;
      left: 50%;
      transform: translate(-50%, 50%);
      text-align: center;
@@ -325,7 +326,7 @@
  .about-us-inside {
      display: flex;
      align-items: center;
-     margin: 6em 0;
+     margin: 3em 0;
      justify-content: center;
  }
 
