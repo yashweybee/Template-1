@@ -60,7 +60,7 @@ ul {
 }
 
 .photo-gallery-item {
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
 }
 
@@ -89,16 +89,16 @@ ul {
 }
 
 .gallery .gallery-item {
-    margin-left: 2em;
+    margin-left: 1em;
     margin-top: 3em;
-    width: 20em;
+    width: 18em;
     cursor: pointer;
     transition: .5s;
 }
 
 .gallery .gallery-item:hover {
     /* transform: scale(1.025); */
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 
